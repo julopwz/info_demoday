@@ -135,7 +135,7 @@ header{
 .icons-serv{
   width: 300px;
   height: 450px;
-  background-color: white;
+  background-image:url("/app/static/images/restaurantinho.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
