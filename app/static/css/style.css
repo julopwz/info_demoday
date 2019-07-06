@@ -34,6 +34,9 @@ body{
   background-color: transparent;
   transition: .5s;
 }
+.colornavbar{
+  background-image: linear-gradient(red, yellow, blue);
+}
 
 .logo-nav{
   color: white;
@@ -135,7 +138,12 @@ header{
 .icons-serv{
   width: 300px;
   height: 450px;
+<<<<<<< HEAD
   background-image: url( '/static/images/restaurante.jpeg' );
+=======
+  background-image: url( '/static/images/restaurantinho.jpg' );
+  background-size: cover;
+>>>>>>> refs/remotes/origin/master
   display: flex;
   align-items: center;
   justify-content: center;
