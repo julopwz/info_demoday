@@ -133,13 +133,13 @@ header{
   margin: 0;
 }
 .icons-serv{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 450px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20%;
+  border-radius: 7%;
 
 }
 
