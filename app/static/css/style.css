@@ -159,6 +159,33 @@ section{
 aside{
   grid-area: aside;
 }
+
+div p {
+  color: #58e870;
+}
+
 footer{
   grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222831;
+  letter-spacing: 100px;
+
+}
+
+div .linha{
+  height: 15px;
+  border: solid 10px;
+}
+
+footer div a{
+  cursor: pointer;
+  
+}
+
+footer nav{
+  height: 5px;
+  width: 100px;
+  background-color: #7cbd1e;
 }
