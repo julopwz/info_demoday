@@ -117,11 +117,30 @@ header{
   display: flex;
   justify-content: center;
 }
-
-.Quadradinhos{
-  background-color:white;
+.t-h1{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -480px;
+}
+.q-serv{
+  background-color:red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;    
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.icons-serv{
+  width: 300px;
+  height: 450px;
+  background-image:url("/app/static/images/restaurantinho.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7%;
+
 }
 
 header h2{
