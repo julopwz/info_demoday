@@ -193,6 +193,10 @@ footer{
 
 }
 
+a :hover div{
+  background-color: aqua;
+}
+
 div .linha{
   height: 15px;
   border: solid 10px;
@@ -203,8 +207,10 @@ footer div a{
   
 }
 
-footer nav{
+footer .linha{
   height: 5px;
   width: 100px;
   background-color: #7cbd1e;
 }
+
+
