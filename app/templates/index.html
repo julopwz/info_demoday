@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Info.css' %}">
     <script src="{% static 'app.js' %}"></script> 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
@@ -14,10 +15,8 @@
                 if($(this).scrollTop() > 100){
                     $(".navbar").css({"opacity" : "1"})
                     $(".navbar").css({"background-color": "#facb14"})
-                    
                 }else{
                     $(".navbar").css({"background-color": "transparent"})
-                    
                 }
             })
         })
@@ -49,7 +48,7 @@
   <div class="q-serv">
     <div class="mini-serv">
         <div class="icons-serv">
-            <!-- <img src="{% static 'images/restaurant.png' %}" alt="">         -->
+            <img src="{% static 'images/restaurant.png' %}" alt="">        
         </div>
       Lojas</div>
       <div class="mini-serv">
@@ -83,7 +82,9 @@
 <!-- FIM DA SECTION -->
 <!-- INICIO DO ASIDE -->
 <aside>
+  <div id="grid">
 
+  </div>
 </aside>
 <!-- FIM DO ASIDE -->
 <!-- INICIO DO FOOTER -->
