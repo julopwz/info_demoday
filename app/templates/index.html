@@ -1,4 +1,5 @@
 {% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/Info.css' %}">
+    <link rel="stylesheet" href="{% static 'css/info.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slide.css' %}">
     <script src="{% static 'app.js' %}"></script> 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
@@ -39,9 +41,9 @@
 <!-- FIM DO MENU NAVBAR -->
 <!-- SLIDE -->
 <section class="parallax-wrapper">
-      <div class="parallax">
-          <h1>This header has parallax effect</h1>
-        </div>
+   {% block content %}
+
+   {% endblock %}
 </section>
 <!-- INICIO DO HEADER -->
 <header>
@@ -83,7 +85,18 @@
 <!-- INICIO DO ASIDE -->
 <aside>
   <div id="grid">
-
+    <div class="box a">1</div>
+    <div class="box b">2</div>
+    <div class="box c">C</div>
+    <div class="box d">D</div>
+    <div class="box e">E</div>
+    <div class="box f">F</div>
+    <div class="box g">1</div>
+    <div class="box h">2</div>
+    <div class="box i">C</div>
+    <div class="box j">D</div>
+    <div class="box k">E</div>
+    <div class="box l">F</div>
   </div>
 </aside>
 <!-- FIM DO ASIDE -->

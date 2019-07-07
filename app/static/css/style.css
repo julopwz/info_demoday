@@ -78,10 +78,6 @@ body{
 .l-navbar:hover{
   font-size: 15.5pt;
 }
-.parallax-wrapper {
-  grid-area: slide;
-  overflow-y: hidden;
-}
 
 .parallax {
   display: flex;
@@ -91,7 +87,6 @@ body{
 }
 
 .parallax {
-  background-image: url("/static/images/pratoslide.jpg");
   background-size: cover;
   background-position: center;
   height: 100%;

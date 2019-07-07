@@ -1,0 +1,24 @@
+{% extends 'index.html'%}
+
+{% block content %}
+    <div class="parallax">
+        <h1>This header has parallax effect</h1>
+    </div>  
+    <ul class="slider">
+        <li>
+        <input type="radio" id="slide1" name="slider" checked>
+        <label for="slide1"></label>
+        <img src="/app/static/images/1.png" alt="">
+        </li>
+        <li>
+        <input type="radio" id="slide2" name="slider" checked>
+        <label for="slide2"></label>
+        <img src="/app/static/images/2.png" alt="">
+        </li>
+        <li>
+        <input type="radio" id="slide3" name="slider" checked>
+        <label for="slide3"></label>
+        <img src="/app/static/images/3.png" alt="">
+        </li>
+    </ul>
+{% endblock %}
