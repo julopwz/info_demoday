@@ -127,7 +127,7 @@ header{
   margin-top: -480px;
 }
 .q-serv{
-  background-color:red;
+  /* background-color:red; */
   display: flex;
   justify-content: space-around;
   align-items: center;    
@@ -135,16 +135,35 @@ header{
   width: 100%;
   margin: 0;
 }
-.icons-serv{
+.icon-loja{
   width: 300px;
   height: 450px;
-<<<<<<< HEAD
-  background-image: url( '/static/images/restaurante.jpeg' );
-=======
+  background-image: url( '/static/images/fachada.jpg' );
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  justify-content: center;
+  border-radius: 7%;
+}
+.icon-moto{
+  width: 300px;
+  height: 450px;
+  background-image: url( '/static/images/caramoto.jpeg' );
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  justify-content: center;
+  border-radius: 7%;
+}
+.icon-rest{
+  width: 300px;
+  height: 450px;
   background-image: url( '/static/images/restaurantinho.jpg' );
   background-size: cover;
->>>>>>> refs/remotes/origin/master
   display: flex;
+  opacity: 0.5;
   align-items: center;
   justify-content: center;
   border-radius: 7%;
@@ -159,7 +178,7 @@ header h2{
 
 }
 header .w-border h2{
-  position: relative;
+  /* position: relative; */
   padding-bottom: 20px;
   display: inline-block; }
 header h2::after{
