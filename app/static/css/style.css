@@ -140,6 +140,7 @@ header{
   height: 450px;
   background-image: url( '/static/images/fachada.jpg' );
   background-size: cover;
+  background-position-x: 88%;
   display: flex;
   align-items: center;
   opacity: 0.5;
@@ -149,8 +150,9 @@ header{
 .icon-moto{
   width: 300px;
   height: 450px;
-  background-image: url( '/static/images/caramoto.jpeg' );
+  background-image: url( '/static/images/delivery.jpg' );
   background-size: cover;
+  background-position-x: 43%;
   display: flex;
   align-items: center;
   opacity: 0.5;
