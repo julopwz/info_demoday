@@ -14,7 +14,7 @@
             $(window).scroll(function(){
                 if($(this).scrollTop() > 100){
                     $(".navbar").css({"opacity" : "1"})
-                    $(".navbar").css({"background-color": "#facb14"})
+                    $(".navbar").css({"background-color": "#45ab5d"})
                 }else{
                     $(".navbar").css({"background-color": "transparent"})
                 }
@@ -47,13 +47,13 @@
 <header>
   <div class="q-serv">
     <div class="mini-serv">
-        <div class="icons-serv">
+        <div class="icon-loja">
             <img src="{% static 'images/restaurant.png' %}" alt="">        
         </div>
       Lojas</div>
       <div class="mini-serv">
 
-        <div class="icons-serv">
+        <div class="icon-rest">
           <img src="{% static 'images/restaurant.png' %}" alt="">        
         </div>
         Restaurantes</div>
@@ -62,15 +62,15 @@
             <h2>Variedades</h2>
     </div> -->
     <div class="mini-serv">
-        <div class="icons-serv">
+        <div class="icon-moto">
             <img src="{% static 'images/restaurant.png' %}" alt="">        
         </div>
       Deliverys</div>
-    <div class="mini-serv">
+    <!-- <div class="mini-serv">
         <div class="icons-serv">
             <img src="{% static 'images/restaurant.png' %}" alt="">        
         </div>
-      Sustentabilidade</div>
+      Sustentabilidade</div> -->
   </div>
 
 </header>
