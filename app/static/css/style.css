@@ -15,8 +15,11 @@ body{
   /* grid-column-gap: 5px; */
   grid-row-gap: 0;
   background-color: white;
-  min-height: 100%;
-  
+  min-height: 100%;  
+}
+#navbarbranco{
+  width: 100%;
+  background-color: white;
 }
 .navbar{
   /* grid-area: nav; */
@@ -33,6 +36,11 @@ body{
   position: fixed;
   background-color: transparent;
   transition: .5s;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+.colornavbar{
+  background: -webkit-linear-gradient(top, rgb(238, 63, 96) 0%, rgb(238, 63, 96) 46%, rgb(242, 110, 87));
 }
 
 .logo-nav{
@@ -49,38 +57,29 @@ body{
   /* margin-top: 100px; */
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
   height: 20px;
+  flex-direction: column;
 }
-.menu-auxiliar{
-  background:red;
-}
-.fixar {
-  position:fixed;
-  margin-top: 0px !important;
-}
-.l-navbar{
-  color:white;
-  /* background: rgba(0,0,0,0.2); */
-  letter-spacing:2px;
-  display:inline-block;
-  width:100%;
-  padding:20px 0px;
-  text-align:center;
-  font-weight:500;
-  cursor:pointer;
-  font-family: Arial, Helvetica, sans-serif;
-  transition: all 0.5s;
+nav a{
   text-decoration: none;
+  color: white;
 }
-.l-navbar:hover{
+nav a:hover{
   font-size: 15.5pt;
+  transition: all 0.5s;
 }
-.parallax-wrapper {
-  grid-area: slide;
-  overflow-y: hidden;
+nav div ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+#tamanho{
+  width: 200px;
+}
 
-}
+
 .parallax {
   display: flex;
   flex-direction: column;
@@ -89,7 +88,7 @@ body{
 }
 
 .parallax {
-  background-image: url("/static/images/pratoslide.jpg");
+  background-image: url( '/static/images/pratoslide.jpg' );
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -124,7 +123,7 @@ header{
   margin-top: -480px;
 }
 .q-serv{
-  background-color:red;
+  /* background-color:red; */
   display: flex;
   justify-content: space-around;
   align-items: center;    
@@ -132,15 +131,76 @@ header{
   width: 100%;
   margin: 0;
 }
-.icons-serv{
+.icon-loja{
   width: 300px;
   height: 450px;
-  background-image:url("/app/static/images/restaurantinho.jpg");
+  background-image: url( '/static/images/fachadat.png' );
+  background-size: cover;
+  cursor: pointer;
+  background-position-x: 88%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 7%;
-
+}
+.icon-loja:hover{
+  width: 300px;
+  height: 450px;
+  cursor: pointer;
+  background-image: url( '/static/images/fachada.png' );
+  background-size: cover;
+  background-position-x: 88%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7%;
+}
+.icon-moto{
+  width: 300px;
+  height: 450px;
+  background-image: url( '/static/images/motot.png' );
+  background-size: cover;
+  background-position-x: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7%;
+}
+.icon-moto:hover{
+  cursor: pointer;  
+  width: 300px;
+  height: 450px;
+  background-image: url( '/static/images/moto.png' );
+  background-size: cover;
+  background-position-x: 43%;
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  border-radius: 7%;
+}
+.icon-rest{
+  width: 300px;
+  height: 450px;
+  background-image: url( '/static/images/restaurantet.png' );
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7%;
+}
+.icon-rest:hover{
+  width: 300px;
+  height: 450px;
+  background-image: url( '/static/images/restaurante.png' );
+  background-color: white;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7%;
 }
 
 header h2{
@@ -151,9 +211,19 @@ header h2{
 
 }
 header .w-border h2{
-  position: relative;
+  /* position: relative; */
   padding-bottom: 20px;
-  display: inline-block; }
+  display: inline-block;
+}
+
+/* Color Theme Swatches in RGBA */
+.agriculture-1-rgba { color: rgba(191, 3, 19, 1); }
+.agriculture-2-rgba { color: rgba(114, 2, 32, 1); }
+.agriculture-3-rgba { color: rgba(54, 89, 1, 1); }
+.agriculture-4-rgba { color: rgba(96, 140, 2, 1); }
+.agriculture-5-rgba { color: rgba(242, 182, 4, 1); }
+
+
 header h2::after{
     content: "";
     width: 70px;
@@ -166,6 +236,7 @@ header h2::after{
     margin-left: 35%;
     margin-top: 2px;
 }
+
 header .w-border .text-center h2:after{
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -174,11 +245,16 @@ header .w-border .text-center h2:after{
 }
 section{
   grid-area: section;
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
 }
+
 aside{
   grid-area: aside;
 }
 
+<<<<<<< HEAD
 div p {
   color: #58e870;
 }
@@ -214,3 +290,11 @@ footer .linha{
 }
 
 
+=======
+footer{
+  grid-area: footer;
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100%;
+}
+>>>>>>> 9fe669637ce54ad7e7f12cc6b3f2bb9562713f34
