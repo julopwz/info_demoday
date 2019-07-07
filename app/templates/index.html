@@ -16,9 +16,11 @@
             $(window).scroll(function(){
                 if($(this).scrollTop() > 100){
                     $(".navbar").css({"opacity" : "1"})
-                    $(".navbar").css({"background-color": "#45ab5d"})
+                    $(".navbar").css({'background':'-webkit-linear-gradient(right, #5a3f37, #2c7744)'});
+                }else if ($(this).scrollTop() > 0){
+                    $(".navbar").css({"background": "transparent"})              
                 }else{
-                    $(".navbar").css({"background-color": "transparent"})
+                  $(".navbar").css({"background-color": "transparent"})
                 }
             })
         })
@@ -41,6 +43,9 @@
 <!-- FIM DO MENU NAVBAR -->
 <!-- SLIDE -->
 <section class="parallax-wrapper">
+    <div class="parallax">
+        <h1>This header has parallax effect</h1>
+    </div>  
    {% block content %}
 
    {% endblock %}
@@ -50,13 +55,13 @@
   <div class="q-serv">
     <div class="mini-serv">
         <div class="icon-loja">
-            <img src="{% static 'images/restaurant.png' %}" alt="">        
+            <img src="{% static 'images/pizza-shop.png' %}" alt="">        
         </div>
       Lojas</div>
       <div class="mini-serv">
 
         <div class="icon-rest">
-          <img src="{% static 'images/restaurant.png' %}" alt="">        
+          <img src="{% static 'images/cheeseburger.png' %}" alt="">        
         </div>
         Restaurantes</div>
 
@@ -65,7 +70,7 @@
     </div> -->
     <div class="mini-serv">
         <div class="icon-moto">
-            <img src="{% static 'images/restaurant.png' %}" alt="">        
+            <img src="{% static 'images/moped.png' %}" alt="">        
         </div>
       Deliverys</div>
     <!-- <div class="mini-serv">
