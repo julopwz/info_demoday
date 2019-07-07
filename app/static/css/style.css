@@ -15,49 +15,30 @@ body{
   /* grid-column-gap: 5px; */
   grid-row-gap: 0;
   background-color: white;
-  min-height: 100%;  
 }
+/* NAVBAR --------------------- */
 #navbarbranco{
   width: 100%;
   background-color: white;
 }
 .navbar{
-  /* grid-area: nav; */
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* margin-top: -76px; */
   width: 100%;
-  min-height: 56px;
-  top: 0;
-  right: 0;
-  left: 0;
-  margin: 0;
   position: fixed;
-  background-color: transparent;
-  transition: .5s;
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
 }
-.colornavbar{
-  background: -webkit-linear-gradient(top, rgb(238, 63, 96) 0%, rgb(238, 63, 96) 46%, rgb(242, 110, 87));
-}
-
 .logo-nav{
   color: white;
-  font-size: 23px;
+  font-size: 25px;
 }
 
 .menu{
-  /* grid-area: nav; */
-  /* background: red; */
-  /* background:rgba(6, 7, 8, 0.541); */
   width:100%;
   padding:20px;
-  /* margin-top: 100px; */
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   height: 20px;
   flex-direction: column;
 }
@@ -75,10 +56,17 @@ nav div ul{
   align-items: center;
   list-style-type: none;
 }
+#tamanho-logo{
+  width: 200px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #tamanho{
   width: 200px;
 }
-
+/* FIM DA NAVBAR -------------------------------- */
 
 .parallax {
   display: flex;
