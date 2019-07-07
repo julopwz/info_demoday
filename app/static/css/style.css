@@ -17,6 +17,10 @@ body{
   background-color: white;
   min-height: 100%;  
 }
+#navbarbranco{
+  width: 100%;
+  background-color: white;
+}
 .navbar{
   /* grid-area: nav; */
   display: flex;
@@ -34,7 +38,7 @@ body{
   transition: .5s;
 }
 .colornavbar{
-  background-image: linear-gradient(red, yellow, blue);
+  background: -webkit-linear-gradient(top, rgb(238, 63, 96) 0%, rgb(238, 63, 96) 46%, rgb(242, 110, 87));
 }
 
 .logo-nav{
@@ -87,6 +91,7 @@ body{
 }
 
 .parallax {
+  background-image: url( '/static/images/pratoslide.jpg' );
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -132,33 +137,70 @@ header{
 .icon-loja{
   width: 300px;
   height: 450px;
-  background-image: url( '/static/images/fachada.jpg' );
+  background-image: url( '/static/images/fachadat.png' );
+  background-size: cover;
+  cursor: pointer;
+  background-position-x: 88%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7%;
+}
+.icon-loja:hover{
+  width: 300px;
+  height: 450px;
+  cursor: pointer;
+  background-image: url( '/static/images/fachada.png' );
   background-size: cover;
   background-position-x: 88%;
   display: flex;
   align-items: center;
-  opacity: 0.5;
   justify-content: center;
   border-radius: 7%;
 }
 .icon-moto{
   width: 300px;
   height: 450px;
-  background-image: url( '/static/images/delivery.jpg' );
+  background-image: url( '/static/images/motot.png' );
   background-size: cover;
   background-position-x: 43%;
   display: flex;
   align-items: center;
-  opacity: 0.5;
+  justify-content: center;
+  border-radius: 7%;
+}
+.icon-moto:hover{
+  cursor: pointer;  
+  width: 300px;
+  height: 450px;
+  background-image: url( '/static/images/moto.png' );
+  background-size: cover;
+  background-position-x: 43%;
+  display: flex;
+  align-items: center;
+  
   justify-content: center;
   border-radius: 7%;
 }
 .icon-rest{
   width: 300px;
   height: 450px;
+  background-image: url( '/static/images/restaurantet.png' );
   background-color: white;
+  background-size: cover;
   display: flex;
-  opacity: 0.5;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7%;
+}
+.icon-rest:hover{
+  width: 300px;
+  height: 450px;
+  background-image: url( '/static/images/restaurante.png' );
+  background-color: white;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 7%;
