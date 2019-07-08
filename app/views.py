@@ -16,3 +16,6 @@ def mostrar_pagina2(request):
 
 def mostrar_pagina3(request):
     return render(request,'pagina3.html')
+
+def mostrar_slide(request):
+    return render(request, 'slide.html')

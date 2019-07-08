@@ -198,8 +198,8 @@ header h2{
   letter-spacing: .2em;
   text-transform: uppercase;
   color: #fff; 
-
 }
+
 header .w-border h2{
   /* position: relative; */
   padding-bottom: 20px;
@@ -215,8 +215,8 @@ header .w-border h2{
 
 
 header h2::after{
-    content: "";
-    width: 70px;
+	content: "";
+	width: 70px;
     left: 50%;
     bottom: 0;
     height: 5px;

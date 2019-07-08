@@ -52,6 +52,10 @@
     left: 70px;
 } 
 
+.slider li:nth-child(4) label {
+    left: 70px;
+} 
+
 .slider li input:checked ~ img {
     opacity: 1;
     visibility: visible;
