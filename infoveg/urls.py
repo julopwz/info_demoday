@@ -24,5 +24,4 @@ urlpatterns = [
     path('pagina1/',views.mostrar_pagina1),
     path('pagina2',views.mostrar_pagina2),
     path('pagina3/',views.mostrar_pagina3),
-    path ('slide/', views.mostrar_slide),
 ]

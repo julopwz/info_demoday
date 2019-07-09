@@ -8,8 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/info.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
     <link rel="stylesheet" href="{% static 'css/slide.css' %}">
+    <link rel="stylesheet" href="{% static 'css/section.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aside.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}"> 
     <script src="{% static 'app.js' %}"></script> 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
@@ -78,20 +82,28 @@
   <!-- FIM DO MENU NAVBAR -->
   <!-- SLIDE -->
   <section class="slide">
-    <slider>
-    <slide><p>Slide1</p></slide>
-    <slide><p>Slide2</p></slide>
-    <slide><p>Slide3</p></slide>
-    <slide><p>Slide4</p></slide>
-    </slider>
-    {% block content %}
-                        
-    {% endblock %}
-  </section>
+    <slide>
+        <img src="{% static 'images/1.png' %}" alt="">
+        <p>Slide1</p>
+    </slide>
+    <slide>
+        <img src="{% static 'images/2.png' %}" alt="">
+        <p>Slide2</p>
+    </slide>
+    <slide>
+        <img src="{% static 'images/3.png' %}" alt="">
+        <p>Slide3</p>
+    </slide>
+    <slide>
+        <img src="{% static 'images/4.png' %}" alt="">
+        <p>Slide4</p>
+    </slide>
+</section>
+
   <!-- INICIO DO HEADER -->
+  
 <header>
   <div class="q-serv">
-
     <div class="mini-serv">
         <div class="icon-loja">
           <img src="{% static 'images/shop.png' %}" alt="">        

@@ -1,0 +1,137 @@
+
+header{
+    grid-area: header;
+    background-color: #222831;
+    /* border: none; */
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.t-h1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -480px;
+}
+
+.q-serv{
+    /* background-color:red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.icon-loja{
+    width: 300px;
+    height: 450px;
+    background-image: url( '/static/images/fachadat.png' );
+    background-size: cover;
+    cursor: pointer;
+    background-position-x: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+}
+
+.icon-loja:hover{
+    width: 300px;
+    height: 450px;
+    cursor: pointer;
+    background-image: url( '/static/images/fachada.png' );
+    background-size: cover;
+    background-position-x: 88%;
+    display: flex;
+    transition: all 0.5s;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+}
+
+.icon-moto{
+    width: 300px;
+    height: 450px;
+    background-image: url( '/static/images/motot.png' );
+    background-size: cover;
+    background-position-x: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+}
+
+.icon-moto:hover{
+    cursor: pointer;  
+    width: 300px;
+    height: 450px;
+    background-image: url( '/static/images/moto.png' );
+    background-size: cover;
+    background-position-x: 43%;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    border-radius: 7%;
+}
+
+.icon-rest{
+    width: 300px;
+    height: 450px;
+    background-image: url( '/static/images/restaurantet.png' );
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+}
+
+.icon-rest:hover{
+    width: 300px;
+    height: 450px;
+    background-image: url( '/static/images/restaurante.png' );
+    background-color: white;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7%;
+}
+  
+header h2{
+    font-size: 2rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #fff; 
+}
+  
+header .w-border h2{
+    /* position: relative; */
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+header h2::after{
+    content: "";
+      width: 70px;
+    left: 50%;
+    bottom: 0;
+    height: 5px;
+    background: #7cbd1e;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 2px;
+}
+  
+header .w-border .text-center h2:after{
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); 
+}
+  
