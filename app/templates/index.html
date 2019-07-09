@@ -13,25 +13,27 @@
     <script src="{% static 'app.js' %}"></script> 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
             $(window).scroll(function(){
-                if($(this).scrollTop() > 100){
-                    $(".navbar").css({"opacity" : "1"})
-                    $(".navbar").css({'background':'-webkit-linear-gradient(right, #5a3f37, #2c7744)'});
-                }else if ($(this).scrollTop() > 0){
-                    $(".navbar").css({"background": "transparent"})              
-                }else{
-                  $(".navbar").css({"background-color": "transparent"})
-                }
-            })
-        })
-    </script>  
+              if ($(window).scrollTop()) {
+            $('.navbar').addClass('bg-dark testex');
+            $('.navbar').removeClass('bg-primary teste');
+              } else {
+            $('.navbar').removeClass('bg-dark testex');
+            $('.navbar').addClass('bg-primary teste');
+              }
+              if ($(window).scrollTop() > 100) {
+            $('.navbar').removeClass('teste');
+            } else {
+            $('.navbar').addClass('teste');
+              }
+      });
+    </script>
     <title>InfoVeg</title>
 </head>
 
 <body>
 <!-- MENU NAVBAR -->
-<nav class="navbar transition">
+<nav class="navbar transition ">
   <div class="menu">
   <ul>
     <li>
