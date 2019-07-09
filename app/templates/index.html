@@ -70,26 +70,29 @@
           </div>
         </li>
       </ul>
-  </div>  
-  <div class="navbar-auxiliar"></div>
-</nav>
-<!-- FIM DO MENU NAVBAR -->
-<!-- SLIDE -->
-<section class="parallax-wrapper">
-    <div class="parallax">
-        <h1>This header has parallax effect</h1>
     </div>  
-   {% block content %}
-
-   {% endblock %}
-</section>
-<!-- INICIO DO HEADER -->
+    <div class="navbar-auxiliar"></div>
+  </nav>
+  <!-- FIM DO MENU NAVBAR -->
+  <!-- SLIDE -->
+  <section>
+    <slider>
+    <slide><p>Slide1</p></slide>
+    <slide><p>Slide2</p></slide>
+    <slide><p>Slide3</p></slide>
+    <slide><p>Slide4</p></slide>
+    </slider>
+    {% block content %}
+                        
+    {% endblock %}
+  </section>
+  <!-- INICIO DO HEADER -->
 <header>
   <div class="q-serv">
 
-      <div class="mini-serv">
+    <div class="mini-serv">
         <div class="icon-loja">
-            <img src="{% static 'images/shop.png' %}" alt="">        
+          <img src="{% static 'images/shop.png' %}" alt="">        
         </div>
       </div>
 

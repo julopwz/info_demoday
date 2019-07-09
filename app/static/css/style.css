@@ -9,18 +9,19 @@ body{
                        'section section section section'
                        'aside aside aside aside'
                        'footer footer footer footer';
-  grid-template-rows: 100vh 90vh 50vh 50vh 30vh;
-  grid-template-columns: 25% 25% 25% 25% 25%;
-  /* grid-row-gap: 3px;x' */
-  /* grid-column-gap: 5px; */
-  grid-row-gap: 0;
-  background-color: white;
+grid-template-rows: 100vh 90vh 50vh 50vh 30vh;
+grid-template-columns: 25% 25% 25% 25% 25%;
+/* grid-row-gap: 3px;x' */
+/* grid-column-gap: 5px; */
+grid-row-gap: 0;
+background-color: white;
 }
 /* NAVBAR --------------------- */
 #navbarbranco{
-  width: 100%;
-  background-color: white;
+width: 100%;
+background-color: white;
 }
+
 .navbar{
   display: flex;
   justify-content: center;
@@ -68,34 +69,6 @@ nav div ul{
 }
 /* FIM DA NAVBAR -------------------------------- */
 
-.parallax {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.parallax {
-  grid-area: slide;
-  background-image: url( '/static/images/pratoslide.jpg' );
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-}
-.parallax-wrapper h1, p {
-  margin: 0;
-  color: #fff;
-}
-
-.parallax-wrapper p {
-  font-weight: 500;
-  font-size: 1.2em;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.6;
-  padding-top: 80px;
-}
 
 header{
   grid-area: header;
@@ -215,16 +188,16 @@ header .w-border h2{
 
 
 header h2::after{
-	content: "";
+  content: "";
 	width: 70px;
-    left: 50%;
-    bottom: 0;
-    height: 5px;
-    background: #7cbd1e;
-    display: flex;
-    justify-content: center;
-    margin-left: 35%;
-    margin-top: 2px;
+  left: 50%;
+  bottom: 0;
+  height: 5px;
+  background: #7cbd1e;
+  display: flex;
+  justify-content: center;
+  margin-left: 35%;
+  margin-top: 2px;
 }
 
 header .w-border .text-center h2:after{
@@ -311,4 +284,75 @@ footer li{
   height: 35px;
   justify-content: center;
   width: 40px;
+}
+
+slider { 
+  grid-area: slide;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f;
+  overflow: hidden;
+ position: absolute;
+} 
+ 
+slider > * { 
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
+  animation: slide 12s infinite;
+  overflow: hidden;
+} 
+ 
+slide:nth-child(1){ 
+  left: 0%; 
+  animation-delay: -1s; 
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-position: center;
+} 
+
+slide:nth-child(2){ 
+  animation-delay: 2s;
+  background-image: url(2.jpg);
+  background-size: cover;
+  background-position: center;
+} 
+
+slide:nth-child(3){
+ animation-delay: 5s;
+  background-image: url(3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(4){ 
+  left: 0%;
+  animation-delay: 8s; 
+  background-image: url(4.jpg); 
+  background-size: cover; 
+  background-position: center; 
+} 
+
+slide p { font-family: Comfortaa; 
+  font-size: 70px; 
+  text-align: center; 
+  display: inline-block; 
+  width: 100%; 
+  margin-top: 340px; 
+  color: #fff; 
+} 
+
+@keyframes slide { 
+  0% { left: 100%; width: 100%; } 
+  5% { left: 50%; } 
+  25% { left: 0%; } 
+  30% { left: -100%; width: 100%; } 
+  30.0001% { left: -100%; width: 0%; } 
+  100% { left: 100%; width: 0%; } 
+}
+
+section{
 }
