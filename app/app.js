@@ -1,36 +1,23 @@
-// MENU NAVBAR -----------------------------------
-// var offset = $('#meuMenu').offset().top;
-// var $meuMenu = $('#meuMenu');
-// $(document).on('scroll', function () {
-//     if (offset <= $(window).scrollTop()) {
-//         $meuMenu.addClass('fixar');
-//     } else {
-//         $meuMenu.removeClass('fixar');
-//     }
-// });
+$(document).ready(function() {
 
-// SLIDE ---------------------------------
-// window.addEventListener('scroll', function(e){
-//   var scrolled = window.pageYOffset;
-//   var parallax = document.querySelector(".parallax");
-  // You can adjust the 0.4 to change the speed
-// 	var coords = (scrolled * 0.4) + 'px'
-//   parallax.style.transform = 'translateY(' + coords + ')';
-// });
-// COR NAVBAR -------------------------------------
-// $(document).ready(function(){       
-//   var scroll_start = 10;
-//   var startchange = $('#startchange');
-//   var offset = startchange.offset();
-//    if (startchange.length){
-//   $(document).scroll(function() { 
-//      scroll_start = $(this).scrollTop();
-//      if(scroll_start > offset.top) {
-//          $(".navbar").css('background-color', 'white');
-//       } else {
-//          $('.navbar').css('background-color', 'transparent');
-//       }
-//   });
-//    }
-// });
+  //textos a serem exibidos
+  var textos = ["texto 1", "texto 2", "texto 3"];
 
+  //exibição inicial
+  var atual = 0;
+  $('#frases').text(textos[atual++]);
+
+  //define intervalo de troca
+  setInterval(function() {
+
+      //efeito de desaparecer
+      $('#frases').fadeOut(function() {
+
+          //função "callback" que mostra o próximo texto
+          if (atual >= textos.length) atual = 0;
+          $('#frases').text(textos[atual++]).fadeIn();
+
+      });
+
+  }, 3000);
+});
