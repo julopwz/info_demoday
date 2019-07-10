@@ -1,8 +1,7 @@
 
 header{
     grid-area: header;
-    background-color: #222831;
-    /* border: none; */
+    background-color:  rgba(114, 2, 32, 1);
     margin-top: 0;
     display: flex;
     justify-content: center;
