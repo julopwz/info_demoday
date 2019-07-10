@@ -1,9 +1,8 @@
 
 footer{
     grid-area: footer;
-    display: block;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     background-image: linear-gradient(to right,rgba(96, 140, 2, 1) , rgba(54, 89, 1, 1)100%);
     padding-top: 50px;
     height: 100%;
