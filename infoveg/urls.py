@@ -22,6 +22,7 @@ urlpatterns = [
     path('', views.mostrar_index),
     path('layout/',views.mostrar_layout),
     path('pagina1/',views.mostrar_pagina1),
-    path('pagina2',views.mostrar_pagina2),
+    path('pagina2/',views.mostrar_pagina2),
     path('pagina3/',views.mostrar_pagina3),
+    path('pagina4/', views.mostrar_pagina4),
 ]

@@ -65,7 +65,17 @@ aside{
 #foto6{
     width: 153px;
     height: 103px;
+    background-image: url('/static/images/mercado.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#foto7{
+    width: 153px;
+    height: 103px;
     background-image: url('/static/images/trab2.png');
     background-size: cover;
     background-position: center;
 }
+
+
