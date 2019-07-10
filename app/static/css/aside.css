@@ -5,19 +5,67 @@ aside{
     margin:0;
     padding: 0;
     width: 100%;
-    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.quadrado{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: contain;
     justify-content: center;
 }
 
-div p {
-    color: #58e870;
+
+#foto1 {
+    width: 153px;
+    height: 103px;
+    background-image: url('/static/images/avoca.png');
+    background-size: cover;
+    background-position: center;
 }
 
-#grid {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100px 100px 100px 100px 100px 100px;
-    background-color: #fff;
-    color: #444;
+#foto2{
+    width: 153px;
+    height: 103px;
+    background-image: url('/static/images/avoca2.png');
+    background-size: cover;
+    background-position: center;
 }
-  
+
+#foto3{
+    width: 153px;
+    height: 103px;
+    background-image: url('/static/images/cesta.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#foto4{
+    width: 153px;
+    height: 103px;
+    background-image: url('/static/images/terra.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#foto5{
+    width: 153px;
+    height: 103px;
+    background-image: url('/static/images/trab.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#foto6{
+    width: 153px;
+    height: 103px;
+    background-image: url('/static/images/trab2.png');
+    background-size: cover;
+    background-position: center;
+}
