@@ -4,21 +4,22 @@ footer{
     display: block;
     align-items: center;
     justify-content: center;
-    background-color: #222831;
+    background-image: linear-gradient(to right,rgba(96, 140, 2, 1) , rgba(54, 89, 1, 1)100%);
     padding-top: 50px;
     height: 100%;
     width: 100%;
 }
 
 .container{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
     margin-left: auto;
-    justify-content: center;
+    margin-right: auto;
+    position: relative;
+    width: 760px;
+    left: -120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-  
+
 .row{
     display: flex;
     flex-wrap: wrap;
