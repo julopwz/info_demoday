@@ -9,7 +9,7 @@ body{
                        'section section section section'
                        'aside aside aside aside'
                        'footer footer footer footer';
-grid-template-rows: 100vh 90vh 50vh 50vh 30vh;
+grid-template-rows: 100vh 90vh 50vh 60vh 10vh;
 grid-template-columns: 25% 25% 25% 25% 25%;
 /* grid-row-gap: 3px;x' */
 /* grid-column-gap: 5px; */
