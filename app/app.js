@@ -12,11 +12,9 @@ $(document).ready(function() {
 
       //efeito de desaparecer
       $('#frases').fadeOut(function() {
-
           //função "callback" que mostra o próximo texto
           if (atual >= textos.length) atual = 0;
           $('#frases').text(textos[atual++]).fadeIn();
-
       });
 
   }, 3000);
