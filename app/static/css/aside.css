@@ -10,6 +10,24 @@ aside{
     align-items: center;
 }
 
+#cadastre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cadastro{
+    padding: 0.8em 0em;
+    width: 300px;
+    background: green;
+    border-radius: 7px;
+    border: 0;
+    color: #fff;
+    font-size: 16pt;
+    cursor: pointer;
+    margin: 1em 1em;
+    text-transform: uppercase;
+}
 
 .quadrado{
     display: flex;
@@ -28,6 +46,7 @@ aside{
     background-image: url('/static/images/avoca.png');
     background-size: cover;
     background-position: center;
+    border-radius: 7px;
 }
 
 #foto2{
@@ -36,6 +55,7 @@ aside{
     background-image: url('/static/images/avoca2.png');
     background-size: cover;
     background-position: center;
+    border-radius: 7px;
 }
 
 #foto3{
@@ -44,6 +64,7 @@ aside{
     background-image: url('/static/images/cesta.png');
     background-size: cover;
     background-position: center;
+    border-radius: 7px;
 }
 
 #foto4{
@@ -52,6 +73,7 @@ aside{
     background-image: url('/static/images/terra.png');
     background-size: cover;
     background-position: center;
+    border-radius: 7px;
 }
 
 #foto5{
@@ -60,6 +82,7 @@ aside{
     background-image: url('/static/images/trab.png');
     background-size: cover;
     background-position: center;
+    border-radius: 7px;
 }
 
 #foto6{
@@ -68,6 +91,7 @@ aside{
     background-image: url('/static/images/mercado.png');
     background-size: cover;
     background-position: center;
+    border-radius: 7px;
 }
 
 #foto7{
@@ -76,6 +100,7 @@ aside{
     background-image: url('/static/images/trab2.png');
     background-size: cover;
     background-position: center;
+    border-radius: 7px;
 }
 
 

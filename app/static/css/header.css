@@ -130,7 +130,7 @@ header .w-border h2{
 
 header h2::after{
     content: "";
-      width: 70px;
+    width: 70px;
     left: 50%;
     bottom: 0;
     height: 5px;
