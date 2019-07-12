@@ -20,9 +20,10 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.mostrar_index),
-    path('layout/',views.mostrar_layout),
-    path('sobre-nos/',views.mostrar_sobrenos),
-    path('pagina2/',views.mostrar_pagina2),
-    path('pagina3/',views.mostrar_pagina3),
+    path('layout/', views.mostrar_layout),
+    path('sobre-nos/', views.mostrar_sobrenos),
+    path('como-funciona/', views.mostrar_comofunciona),
+    path('pagina2/', views.mostrar_pagina2),
+    path('pagina3/', views.mostrar_pagina3),
     path('pagina4/', views.mostrar_pagina4),
 ]
