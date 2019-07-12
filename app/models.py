@@ -72,3 +72,9 @@ class Servico(models.Model):
     foto = models.ImageField(upload_to='', default= '')
     servico = models.CharField(max_length=2, choices=servico_opcoes)
 
+class inscricao(models.Model):
+    usuario = models.CharField(max_length=20)
+    senha = models.CharField(max_length=10)
+    cpf = models.CharField(max_length=11)
+    email = models.EmailField(max_length=20)
+    celular = models.CharField(max_length=15)
