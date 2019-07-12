@@ -179,7 +179,7 @@ header{
 .icon-rest{
     width: 300px;
     height: 450px;
-    background-image: url( '/static/images/restaurantet.png' );
+    background-image: url( '/static/images/restaurante.png' );
     background-color: white;
     background-size: cover;
     display: flex;
@@ -191,7 +191,7 @@ header{
 .icon-rest:hover{
     width: 300px;
     height: 450px;
-    background-image: url( '/static/images/restaurante.png' );
+    background-image: url( '/static/images/restaurantet.png' );
     background-color: white;
     background-size: cover;
     cursor: pointer;
