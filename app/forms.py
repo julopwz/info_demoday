@@ -6,9 +6,9 @@ class PedidoForm(forms.ModelForm):
     class Meta:
         model = inscricao
         fields = [
+            'usuario',
+            'senha',
             'cpf',
             'email',
-            'endereco',
-            'cartao',
-            'pagamento'
+            'celular'
 ]
