@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var textos = ["InfoVeg", "Sáude", "Bem estar", "Nova maneira", "De", "Vida"];
+    var textos = ["InfoVeg", "Saúde", "Bem estar", "Nova maneira", "De", "Vida"];
     var atual = 0;
     $('#frases').text(textos[atual++]);
     setInterval(function() {
