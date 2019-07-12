@@ -4,14 +4,19 @@ section{
     background-color:white;
     width: 150%;
     height: 150%;
+    
 }
   
 .sobre{
     width: 800px;
     height: 400px;
     margin-left: 50px;
+    text-align: justify; 
 }
 
+
 div p{
-    line-height: px;
+    line-height: px;   
 }
+
+
