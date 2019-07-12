@@ -32,7 +32,7 @@ class Loja(models.Model):
     descricao = models.TextField(default='')
     lugar = models.CharField(max_length=50)
     produtos = models.CharField(max_length=2, choices=produtos_opcoes)
-    foto = models.ImageField(upload_to='', default= '')
+    foto = models.ImageField(upload_to='', default='')
 
     def __str__(self):
         return self.nome
@@ -57,24 +57,25 @@ class Restaurante(models.Model):
     qualidade = models.PositiveIntegerField()
     categoria = models.CharField(max_length=20, choices=tipo_opcoes)
     nivel_avaliacao = models.PositiveIntegerField(choices=nivel_avaliacao)
-    foto = models.ImageField(upload_to='', default= '')
+    foto = models.ImageField(upload_to='', default='')
 
 class Servico(models.Model):
 
     servico_opcoes = [
         ('delivery', 'Delivery'),
-        ('outra', 'Outra'),
-        ('teste', 'Teste'),
+        ('nutricionista', 'Nutricionista'),
+        ('dicas', 'Dicas'),
+        ('auxilio', 'Auxilio'),
     ]
 
     nome = models.CharField(max_length=30)
     descricao = models.TextField( max_length=50, default='')
-    foto = models.ImageField(upload_to='', default= '')
+    foto = models.ImageField(upload_to='', default='')
     servico = models.CharField(max_length=2, choices=servico_opcoes)
 
 class Inscricao(models.Model):
     usuario = models.CharField(max_length=20)
     senha = models.CharField(max_length=10)
     cpf = models.CharField(max_length=11)
-    email = models.EmailField(max_length=20)
+    email = models.EmailField(max_length=75)
     celular = models.CharField(max_length=15)
