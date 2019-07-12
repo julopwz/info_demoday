@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.mostrar_index),
     path('layout/',views.mostrar_layout),
-    path('pagina1/',views.mostrar_pagina1),
+    path('sobre-nos/',views.mostrar_sobrenos),
     path('pagina2/',views.mostrar_pagina2),
     path('pagina3/',views.mostrar_pagina3),
     path('pagina4/', views.mostrar_pagina4),

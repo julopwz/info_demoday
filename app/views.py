@@ -8,8 +8,8 @@ def mostrar_index(request):
 def mostrar_layout(request):
     return render(request,'layout.html')
 
-def mostrar_pagina1(request):
-    return render(request,'pagina1.html')
+def mostrar_sobrenos(request):
+    return render(request,'sobre-nos.html')
 
 def mostrar_pagina2(request):
     return render(request,'pagina2.html')

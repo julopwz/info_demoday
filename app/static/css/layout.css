@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'header' 'section'	'footer';
+    grid-template-rows: 10vh 100vh 20vh;
+    grid-template-columns: 98.9vw;
+}
+/* NAVBAR --------------------- */
+
+#navbarbranco{
+    width: 100%;
+    background-color: white;
+}
+
+nav{
+    height: 100px;
+}
+
+
+.navbar{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(96, 140, 2, 1);
+    /* background-color: white; */
+    position: fixed;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    /* z-index: 2; */
+} 
+.logo-nav{
+    color: white;
+    font-size: 25px;
+}
+#tamanho-inicio{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    width:100%;
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    flex-direction: column;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    font-size: 15.5pt;
+    transition: all 0.5s;
+}
+
+nav div ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+#tamanho-logo{
+    width: 200px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tamanho{
+    width: 200px;
+}
+
+/* FIM DA NAVBAR -------------------------------- */
+#sobrePrincipal{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+section{
+    grid-area: section;
+    border-top: 10px solid rgb(140, 2, 2);
+    border-block-end: 10px solid rgba(96, 140, 2, 1);
+    /* height: 100vh; */
+    background-image: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+section div p{
+    margin-top: 80px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding: 2px;
+    display: flex;
+    font-size: 19px;
+}
+.titulo{
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: black;
+}
+h4{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+footer {
+    grid-area: footer;
+}
