@@ -69,14 +69,13 @@ class Servico(models.Model):
     ]
 
     nome = models.CharField(max_length=30)
-    descricao = models.TextField( max_length=50, default='')
+    descricao = models.TextField( max_length=50)
     foto = models.ImageField(upload_to='', default='')
-    servico = models.CharField(max_length=2, choices=servico_opcoes)
+    servico = models.CharField(max_length=2, choices=servico_opcoes, default='')
 
 class Cadastro(models.Model):
     usuario = models.CharField(max_length=20)
     senha = models.CharField(max_length=10)
     cpf = models.CharField(max_length=11)
     email = models.EmailField(max_length=75)
-    celular = models.CharField(max_length=15)
-
+    celular = models.CharField(max_length=10)
