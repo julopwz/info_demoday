@@ -1,5 +1,6 @@
 from django import forms
 from app.models import Contato, Cadastro
+from django.contrib.auth.models import User
 
 class ContatoForm(forms.ModelForm):
     class Meta:
@@ -43,3 +44,7 @@ class CadastroForm(forms.ModelForm):
          except:
             transaction.rollback()
             return False, "Erro ao salvar cliente."
+
+class LoginForm(forms.Form):
+    username = forms.CharField()
+    password = forms.CharField(widget=forms.PasswordInput)
