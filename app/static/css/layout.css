@@ -1,10 +1,20 @@
 body{
     margin: 0;
     display: grid;
-    grid-template-areas: 'header' 'section'	'footer';
-    grid-template-rows: 10vh 100vh 20vh;
-    grid-template-columns: 98.9vw;
+    grid-template-areas:
+    /* 'header header header header' */
+    'slide slide slide slide'
+    /* 'aside aside aside aside' */
+    'footer footer footer footer';
+grid-template-rows:  100vh 10vh;
+grid-template-columns: 25% 25% 25% 25%;
 }
+aside{
+    grid-area: slide;
+    background-color: red;
+    /* height: auto; */
+}
+
 /* NAVBAR --------------------- */
 
 #navbarbranco{
