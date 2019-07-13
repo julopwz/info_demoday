@@ -10,11 +10,19 @@ aside{
     align-items: center;
 }
 
+
+aside div p{
+    text-align: center;
+    
+}
+
+
 #cadastre{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 20px;
 }
 .cadastro{
     padding: 0.8em 0em;
@@ -37,6 +45,8 @@ aside{
     background-position: center;
     background-size: contain;
     justify-content: center;
+    vertical-align: baseline;
+    padding: 15px;
 }
 
 
@@ -47,6 +57,7 @@ aside{
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    margin: 4px;
 }
 
 #foto2{
@@ -56,6 +67,7 @@ aside{
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    margin: 4px;
 }
 
 #foto3{
@@ -65,6 +77,7 @@ aside{
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    margin: 4px;
 }
 
 #foto4{
@@ -74,6 +87,7 @@ aside{
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    margin: 4px;
 }
 
 #foto5{
@@ -83,6 +97,7 @@ aside{
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    margin: 4px;
 }
 
 #foto6{
@@ -92,6 +107,7 @@ aside{
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    margin: 4px;
 }
 
 #foto7{
@@ -101,6 +117,7 @@ aside{
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    margin: 4px;
 }
 
 

@@ -6,7 +6,7 @@ body{
   grid-template-areas:
                        'slide slide slide slide'
                        'header header header header'
-                       'section section section section'
+                       'section section div div'
                        'aside aside aside aside'
                        'footer footer footer footer';
 grid-template-rows: 100vh 90vh 90vh 90vh 10vh;
