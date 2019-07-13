@@ -1,21 +1,22 @@
 section{
     grid-area: section;
     background-color:white;
-    width: 150%;
-    height: 150%;
+    width: 100%;
+    height: 100%;
     
 }
   
 .sobre{
-    width: 800px;
-    height: 400px;
+    width: 80%;
+    height: 90%;
     margin-left: 50px;
     text-align: justify; 
+    align-items: center;
 }
 
 
 div p{
-    line-height: px;   
+    font-size: 15px;
 }
 
 
