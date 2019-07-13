@@ -2,17 +2,16 @@
 
 {% block content %}
 
-<section>
+<aside>
     <article id="filtro">
         <h2>Contato</h2>
-    
-    <div class="fale-conosco">
-        <form method='POST'>
-            {% csrf_token %} {{ form.as_p }}
-            <button type="submit">Enviar</button>
+
+
+        <form method="POST" class="post-form">
+                {% csrf_token %}{{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Enviar</button>
         </form>
-    </div>
-    <a href="/">Voltar</a>
-</section>
+    </article>
+</aside>
 
 {% endblock %}
