@@ -1,6 +1,16 @@
 from django import forms
-from app.models import Cadastro
+from app.models import Contato, Cadastro
 
+class ContatoForm(forms.ModelForm):
+    class Meta:
+        model = Contato
+        fields = [
+            'nome',
+            'email',
+            'telefone',
+            'assunto',
+            'mensagem',
+        ]
 
 class CadastroForm(forms.ModelForm):
     senha = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Digite sua senha'}))
@@ -33,6 +43,3 @@ class CadastroForm(forms.ModelForm):
          except:
             transaction.rollback()
             return False, "Erro ao salvar cliente."
-
-
-            # def edit(self,usuario):

@@ -4,14 +4,18 @@
 {% block content %}
 
 <section>
-    <div>
-        <h4 class="titulo">Contato</h4>
+    <article id="filtro">
+        <h2>Contato</h2>
+    
+    <div class="fale-conosco">
+        <form method='POST'>
+            {% csrf_token %} {{ form.as_p }}
+            <button type="submit">Enviar</button>
+        </form>
     </div>
     
-    <div>
-
-    </div>
-
+    <a href="/">Voltar</a>
+    
 </section>
 
 {% endblock %}

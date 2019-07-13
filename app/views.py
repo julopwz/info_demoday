@@ -1,7 +1,5 @@
 from django.shortcuts import render
-from app.forms import CadastroForm
-
-# Create your views here.
+from app.forms import ContatoForm, CadastroForm
 
 
 def mostrar_index(request):
@@ -11,7 +9,19 @@ def mostrar_layout(request):
     return render(request,'layout.html')
 
 def mostrar_contato(request):
-    return render(request, 'contato.html')
+    formulario = ContatoForm(request.POST or None)
+    msg = ''
+
+    if formulario.is_valid():
+        formulario.save()
+        formulario = ContatoForm()
+        msg = 'Mensagem enviada com sucesso'
+
+    contexto = {
+        'form' : formulario,
+        'msg' : msg
+    }
+    return render(request, 'contato.html', contexto)
 
 def mostrar_sobrenos(request):
     return render(request,'sobre-nos.html')

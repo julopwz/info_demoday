@@ -73,6 +73,12 @@ class Servico(models.Model):
     foto = models.ImageField(upload_to='', default='')
     servico = models.CharField(max_length=2, choices=servico_opcoes, default='')
 
+# def buscar_servico_opcao(busca):
+    #for item in servico_op:
+       # if busca.lower() == item[1].lower():
+       #     return item[0]
+  #  return None
+
 class Contato(models.Model):
     nome = models.CharField(max_length=50, default="")
     email = models.EmailField(max_length=40, default="")
@@ -90,3 +96,5 @@ class Cadastro(models.Model):
     cpf = models.CharField(max_length=11)
     email = models.EmailField(max_length=75)
     celular = models.CharField(max_length=10)
+
+    
