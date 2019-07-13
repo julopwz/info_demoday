@@ -29,7 +29,7 @@ header{
 .icon-loja{
     width: 300px;
     height: 450px;
-    background-image: url( '/static/images/fachada.png' );
+    background-image: url( '/static/images/lojanova.png' );
     background-size: cover;
     cursor: pointer;
     background-position-x: 88%;
@@ -43,7 +43,7 @@ header{
     width: 300px;
     height: 450px;
     cursor: pointer;
-    background-image: url( '/static/images/fachadat.png' );
+    /* background-image: url( '/static/images/fachadat.png' ); */
     background-size: cover;
     background-position-x: 88%;
     display: flex;
@@ -94,7 +94,7 @@ header{
 .icon-moto{
     width: 300px;
     height: 450px;
-    background-image: url( '/static/images/moto.png' );
+    background-image: url( '/static/images/delivery.jpg' );
     background-size: cover;
     background-position-x: 43%;
     display: flex;
@@ -107,7 +107,7 @@ header{
     cursor: pointer;  
     width: 300px;
     height: 450px;
-    background-image: url( '/static/images/motot.png' );
+    /* background-image: url( '/static/images/motot.png' ); */
     background-size: cover;
     background-position-x: 43%;
     display: flex;
@@ -179,7 +179,7 @@ header{
 .icon-rest{
     width: 300px;
     height: 450px;
-    background-image: url( '/static/images/restaurante.png' );
+    background-image: url( '/static/images/restaurantenovo.png' );
     background-color: white;
     background-size: cover;
     display: flex;
@@ -191,7 +191,7 @@ header{
 .icon-rest:hover{
     width: 300px;
     height: 450px;
-    background-image: url( '/static/images/restaurantet.png' );
+    /* background-image: url( '/static/images/restaurantet.png' ); */
     background-color: white;
     background-size: cover;
     cursor: pointer;
@@ -216,7 +216,7 @@ header{
 .img-rest:hover{
     background-image: url( '/static/images/dish.png' );
     cursor: pointer;
-    transition: all 0.5s;
+    transition: 1.0s;
     display: flex;
     justify-content: center;
     width: 300px;
