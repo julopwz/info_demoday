@@ -84,7 +84,7 @@ class Contato(models.Model):
     email = models.EmailField(max_length=40, default="")
     telefone = models.CharField(max_length=15, default="")
     assunto = models.CharField(max_length=50, default="")
-    mensagem = models.TextField(max_length=300, default="")
+    mensagem = models.TextField(max_length=100, default="")
 
     def __str__(self):
         return self.assunto

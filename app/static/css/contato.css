@@ -1,4 +1,4 @@
-section {
+aside {
     height: 100vh;
     font-family: 'Lato', sans-serif;
     background-image: url('/static/images/avoca.png');
@@ -34,14 +34,12 @@ input[type="hidden" i]{
     padding: initial;
     border: initial;
 }
-#id_cpf{
-    margin-right: 4px;
-}
+
 form label{
     color: white;
-    width: 100%;
     display: flex;
     font-size: 15pt;
+    width: 100%;
 }
 form button{
     width: 130px;
@@ -66,9 +64,13 @@ form input{
     height: 100%;
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0,0,0, .5),rgba(96, 140, 2, 0.521), rgba(96, 140, 2, 0.534));
 }
+
+.post-form{
+    width: 100%;
+    height: 100%;
+}
 aside article{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
