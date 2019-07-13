@@ -9,6 +9,7 @@ body{
 grid-template-rows:  100vh 10vh;
 grid-template-columns: 25% 25% 25% 25%;
 }
+
 aside{
     grid-area: slide;
     background-color: red;
