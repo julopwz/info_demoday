@@ -1,14 +1,14 @@
 from django import forms
-from models import inscricao 
+from app.models import Cadastro
 
 
-class PedidoForm(forms.ModelForm):
+class CadastroForm(forms.ModelForm):
     class Meta:
-        model = inscricao
+        model = Cadastro
         fields = [
             'usuario',
             'senha',
             'cpf',
             'email',
             'celular'
-]
+        ]

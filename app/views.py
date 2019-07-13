@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from app.forms import CadastroForm
 
 # Create your views here.
+
 
 def mostrar_index(request):
     return render(request, 'index.html')
@@ -15,7 +17,20 @@ def mostrar_comofunciona(request):
     return render(request, 'como-funciona.html')
 
 def mostrar_cadastro(request):
-    return render(request, 'cadastro.html')
+    formulario = CadastroForm(request.POST or None)
+    msg = ''
+
+    if formulario.is_valid():
+        formulario.save()
+        formulario = CadastroForm()
+        msg = 'Cadastro com sucesso'
+
+    contexto = {
+        'form' : formulario,
+        'msg' : msg
+    }
+
+    return render(request, 'cadastro.html', contexto)
 
 def mostrar_pagina2(request):
     return render(request,'pagina2.html')
