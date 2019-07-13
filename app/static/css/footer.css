@@ -17,8 +17,8 @@ footer a {
     font-size: 9pt;
     color: darkgray;
 }
-footer h2{
-    font-size: 20pt;
+footer h3{
+    font-size: 32pt;
 }
 footer p{
     display: flex;
