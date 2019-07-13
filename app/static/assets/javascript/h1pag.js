@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    var textos = ["InfoVeg", "Saúde", "Bem estar", "Nova maneira", "De", "Vida"];
-    var atual = 0;
+    let textos = ["InfoVeg", "Saúde", "Bem estar", "Nova maneira", "De", "Vida"];
+    let atual = 0;
     $('#frases').text(textos[atual++]);
     setInterval(function() {
         $('#frases').fadeOut(function() {

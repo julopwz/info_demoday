@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+#text-somos{
+    background-color: blue;
+    width: 50%;
+    display: flex;
+}
+
+.imagem img{
+  width: 10%;
+}
+
+.imagem{
+    width: 10px;
+    height: 10px;
+}
+
