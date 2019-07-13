@@ -1,5 +1,6 @@
 from django import forms
-from app.models import Contato, Cadastro
+from app.models import Contato
+from app.models import Cadastro
 from django.contrib.auth.models import User
 
 class ContatoForm(forms.ModelForm):
@@ -21,29 +22,40 @@ class CadastroForm(forms.ModelForm):
     cpf = forms.CharField(widget=forms.NumberInput(attrs={'placeholder': 'Digite seu CPF'}))
     class Meta:
         model = Cadastro
-        fields = [
-            'usuario',
-            'senha',
-            'cpf',
-            'email',
-            'celular'
-        ]
-        def save(self):
-         try:
-            cpf = CelularUsuario(
-                celular=self.cleaned_data['celular']
-            ).save()
+        fields = ['usuario','senha','cpf','email','celular']
+        error_messages = {
+            'senha':{
+                'required':'Este campo é obrigatório'
+            },
+            'usuario':{
+                'required':'Este campo é obrigatório'
+            },
+            'email':{
+                'required':'Escreva um email válido'
+            },
+            'celular':{
+                'required':'Este campo é obrigatório'
+            },
+            'cpf':{
+                'required':'Este campo é obrigatório'
+            },
+        }
+        # def save(self):
+        #  try:
+        #     cpf = CelularUsuario(
+        #         celular=self.cleaned_data['celular']
+        #     ).save()
 
-            usuario = Usuario(
-                login=self.cleaned_data['login'],
-                senha=make_password(self.cleaned_data['senha']),
-            ).save()
+        #     usuario = Usuario(
+        #         login=self.cleaned_data['login'],
+        #         senha=make_password(self.cleaned_data['senha']),
+        #     ).save()
 
-            return True, usuario.id
+        #     return True, usuario.id
 
-         except:
-            transaction.rollback()
-            return False, "Erro ao salvar cliente."
+        #  except:
+        #     transaction.rollback()
+        #     return False, "Erro ao salvar cliente."
 
 class LoginForm(forms.Form):
     username = forms.CharField()
