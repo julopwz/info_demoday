@@ -25,4 +25,5 @@ urlpatterns = [
     path('', views.mostrar_index),
     path('sobre-nos/', views.mostrar_sobrenos),
     path('layout/', views.mostrar_layout),
+    path('loja/', views.mostrar_loja),
 ]

@@ -6,6 +6,9 @@ from app.models import Cadastro
 def mostrar_sobrenos(request):
     return render(request,'sobre-nos.html')
 
+def mostrar_loja(request):
+    return render(request, 'loja.html')
+
 def mostrar_index(request):
     return render(request, 'index.html')
 
