@@ -1,6 +1,3 @@
-body{
-    margin: 0;
-}
 
 #text-somos{
     background-color: blue;
@@ -17,3 +14,13 @@ body{
     height: 10px;
 }
 
+aside{
+    width: 100%;
+    height: 100%;
+}
+
+#sobrePrincipal{
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
