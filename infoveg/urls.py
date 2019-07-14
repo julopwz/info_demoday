@@ -1,7 +1,7 @@
-"""infoveg URL Configuration
+"""login URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.2/topics/http/urls/
+    https://docs.djangoproject.com/en/2.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -16,17 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app import views
-from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('cadastro/', views.mostrar_cadastro),
+    path('login/', views.mostrar_login),
+    path('busca/', views.mostrar_busca),
     path('', views.mostrar_index),
-    path('layout/', views.mostrar_layout),
-    path('contato/', views.mostrar_contato),
     path('sobre-nos/', views.mostrar_sobrenos),
-    path('como-funciona/', views.mostrar_comofunciona),
-    path('cadastro/', views.mostrar_cadastro, name='cadastro'),
-    path('pagina4/', views.mostrar_pagina4),
-    path('login/', views.user_login, name='login'),
-    path('logout/', views.logout, name='logout')
+    path('layout/', views.mostrar_layout),
 ]
