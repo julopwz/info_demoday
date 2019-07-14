@@ -121,7 +121,7 @@ def buscar_sigla_especialidade(busca):
 
 class Cadastro(models.Model):
     nome = models.CharField(max_length=50, default="")
-    nascimento = models.DateTimeField(blank=True, null=True)
+    nascimento = models.DateField(null=False)
     telefone = models.CharField(max_length=15, default="")
     email = models.EmailField(max_length=50, default="")
     username = models.CharField(max_length=20, default="")
