@@ -45,7 +45,7 @@ def mostrar_cadastro(request):
             return redirect('cadastro/')
     return render(request, 'cadastro.html', context)
 
-def user_login(request):
+def login_user(request):
     if request.method == 'POST':
         cadastro = authenticate(usuario=request.POST['usuario'], senha=request.POST['senha'])
         if cadastro is not None:
