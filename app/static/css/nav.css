@@ -38,7 +38,10 @@ nav{
     color: white;
     font-size: 25px;
 }
-  
+.logo{
+    width: 25px;
+    height: 25px;
+}
 .menu{
     width:100%;
     padding:20px;
