@@ -46,6 +46,7 @@ def mostrar_cadastro(request):
         formulario_cadastro.save()
         formulario_cadastro = CadastroForm()
         msg = 'Cadastro criado com sucesso'
+        return redirect('/busca')
 
     contexto = {
         'form' : formulario_cadastro,

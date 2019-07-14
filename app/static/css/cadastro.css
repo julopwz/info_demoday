@@ -7,7 +7,9 @@ aside {
 h2{
     color: white;
     font-size: 50pt;
+    text-align: left;
 }
+
 form{
     display: flex;
     flex-direction: column;
@@ -25,6 +27,7 @@ form input{
 }
 input:not([type="image" i]){
     box-sizing: border-box;
+    width: 200px;
 }
 input[type="hidden" i]{
     display: none;
@@ -70,4 +73,14 @@ aside article{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#text-cdt{
+    font-size: 10pt;
+    color: white;
+}
+#enter-cdt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
