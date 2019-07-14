@@ -62,6 +62,7 @@ def mostrar_cadastro(request):
 def mostrar_login(request): 
     formulario_login = LoginForm(request.POST or None)
     msg = ''
+
     if formulario_login.is_valid():
         username = formulario_login.cleaned_data['username']
         password = formulario_login.cleaned_data['password']
