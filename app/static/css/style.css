@@ -18,9 +18,8 @@ background-color: white;
 }
 
 /* Color Theme Swatches in RGBA */
-.agriculture-1-rgba { color: rgba(191, 3, 19, 1); }
-.agriculture-2-rgba { color: rgba(114, 2, 32, 1); }
-.agriculture-3-rgba { color: rgba(54, 89, 1, 1); }
-.agriculture-4-rgba { color: rgba(96, 140, 2, 1); }
-.agriculture-5-rgba { color: rgba(242, 182, 4, 1); }
-
+.orange-isolated-on-white-background-1-rgba { color: rgba(49, 114, 2, 1); }
+.orange-isolated-on-white-background-2-rgba { color: rgba(242, 188, 29, 1); }
+.orange-isolated-on-white-background-3-rgba { color: rgba(242, 135, 4, 1); }
+.orange-isolated-on-white-background-4-rgba { color: rgba(242, 105, 26, 1); }
+.orange-isolated-on-white-background-5-rgba { color: rgba(242, 242, 242, 1); }

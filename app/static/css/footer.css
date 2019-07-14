@@ -5,8 +5,8 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
-    color: darkgray;
+    background-color:  rgba(49, 114, 2, 1);  
+    color: white;
     height: 20vh;
     font-family: 'Raleway', sans-serif;
 }
@@ -15,7 +15,7 @@ footer a {
     height: 1vh;
     text-decoration: none;
     font-size: 9pt;
-    color: darkgray;
+    color: white;
 }
 footer h3{
     font-size: 32pt;
@@ -60,7 +60,7 @@ footer p{
     height: 31px;
     margin-left: 10px;
     width: 31px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color:white;
 }
 #linksf{
     height: 20vh;

@@ -3,11 +3,11 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 97%;
+    width: 100%;
     background-color:white;
     justify-content: space-around;
     align-items: flex-start;
-    background-image: url('/static/images/fruta.png');
+    background-image: url('/static/images/maiss.jpg');
     background-size: cover;
 }
 
