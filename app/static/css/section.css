@@ -1,19 +1,17 @@
 section{
-    grid-area: section;
     background-color:rgba(242, 242, 242, 1);
-    width: 100%;
+    grid-area: section;
     height: 100%;
-    
+    width: 100%;
 }
   
 .sobre{
-    width: 80%;
+    align-items: center;
     height: 90%;
     margin-left: 50px;
     text-align: justify; 
-    align-items: center;
+    width: 80%;
 }
-
 
 div p{
     font-size: 15px;
