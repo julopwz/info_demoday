@@ -19,10 +19,15 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.mostrar_index),
+    path('como-funciona/', views.mostrar_comofunciona),
+    path('contato/', views.mostrar_contato),
+    path('sobre-nos/', views.mostrar_sobrenos),
     path('cadastro/', views.mostrar_cadastro),
     path('login/', views.mostrar_login),
     path('busca/', views.mostrar_busca),
-    path('', views.mostrar_index),
-    path('sobre-nos/', views.mostrar_sobrenos),
     path('layout/', views.mostrar_layout),
-]
+    path('loja/', views.mostrar_loja),
+    path('restaurante/', views.mostrar_restaurante),
+    path('servico/', views.mostrar_servico),
+    ]
