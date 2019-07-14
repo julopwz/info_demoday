@@ -200,4 +200,20 @@ class Contato(models.Model):
     mensagem = models.TextField(max_length=100, default='')
 
     def __str__(self):
+<<<<<<< HEAD
         return self.assunto
+=======
+       return self.assunto
+
+
+class Cadastro(models.Model):
+    nome = models.CharField(max_length=50, default='')
+    telefone = models.CharField(max_length=15, default='')
+    nascimento = models.DateField()
+    email = models.EmailField(max_length=50, default='')
+    username = models.CharField(max_length=20, default='')
+    password = models.CharField(max_length=20, default='')
+
+    def __str__(self):
+       return  self.username
+>>>>>>> eb0d09b6391c951203a0740bd4cb0c686862c936
