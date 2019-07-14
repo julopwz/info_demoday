@@ -71,3 +71,28 @@ aside article{
     align-items: center;
     justify-content: center; 
 }
+#login{
+    width: 130px;
+    height: 35px;
+    background-color: rgba(96, 140, 2, 1);;
+    border-radius: 20px;
+    border: white solid 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-right: 48px;
+}
+#voltar{
+    width: 130px;
+    height: 35px;
+    background-color: rgba(96, 140, 2, 1);;
+    border-radius: 20px;
+    border: white solid 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-right: 48px;
+}
+#none-t{
+    text-decoration: none;
+}

@@ -5,16 +5,18 @@
 {% block content %}
 <aside>
     <article id="filtro">
-        <h1>Login</h1>
+        <h2>Login</h2>
         <form action="/login/" method="POST">
             {% csrf_token %} 
             {{ form.as_p }}
-            <input type="submit" value="Entrar" />
+            <button type="submit" value="Entrar" />Entrar
         </form>
         {% if msg != ' ' %}
             <p>{{ msg }}</p>
         {% endif %}
-        <a href="/">Voltar</a>
+        <a id="none-t" href="/">
+            <button id="voltar" type="submit" aria-label="entrar" href="/">Voltar</button>
+        </a>
     </article>
 </aside>
 {%  endblock %}
