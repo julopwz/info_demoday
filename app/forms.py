@@ -12,7 +12,20 @@ class ContatoForm(forms.ModelForm):
             'telefone',
             'assunto',
             'mensagem',
-        ]
+]
+
+
+class CadastroForm(forms.ModelForm):
+    class Meta:
+        model = Cadastro
+        fields = [
+            'nome',
+            'email',
+            'nascimento',
+            'telefone',
+            'username',
+            'password'
+]
 
 class CadastroForm(forms.ModelForm):
     senha = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Digite sua senha'}))
@@ -20,6 +33,7 @@ class CadastroForm(forms.ModelForm):
     email = forms.CharField(widget=forms.EmailInput(attrs={'placeholder': 'Digite seu email'}))
     celular = forms.CharField(widget=forms.NumberInput(attrs={'placeholder': 'Digite seu número'}))
     cpf = forms.CharField(widget=forms.NumberInput(attrs={'placeholder': 'Digite seu CPF'}))
+    
     class Meta:
         model = Cadastro
         fields = ['usuario','senha','cpf','email','celular']

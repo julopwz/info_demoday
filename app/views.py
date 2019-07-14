@@ -7,7 +7,6 @@ from .forms import LoginForm
 from django.contrib.auth.decorators import login_required
 
 
-
 def mostrar_index(request):
     return render(request, 'index.html')
 
@@ -35,6 +34,15 @@ def mostrar_sobrenos(request):
 def mostrar_comofunciona(request):
     return render(request, 'como-funciona.html')
 
+def mostrar_pagina4(request):
+    return render(request, 'pagina4.html')
+
+def mostrar_pagina2(request):
+    return render(request, 'pagina2.html')
+
+def mostrar_pagina3(request):
+    return render(request, 'pagina3.html')
+
 def mostrar_cadastro(request):
     formulario_cadastro = CadastroForm(request.POST or None)
     msg = ' '
@@ -53,7 +61,7 @@ def mostrar_cadastro(request):
     
 def mostrar_login(request): 
     formulario_login = LoginForm(request.POST or None)
-    msg = ' '
+    msg = ''
     if formulario_login.is_valid():
         username = formulario_login.cleaned_data['username']
         password = formulario_login.cleaned_data['password']
@@ -67,8 +75,4 @@ def mostrar_login(request):
     return render(request, 'login.html', {'form': formulario_login, 'msg': msg})
 
 def logout(request):
-    logout(request)
     return redirect('login/')
-
-def mostrar_pagina4(request):
-    return render(request, 'pagina4.html')
