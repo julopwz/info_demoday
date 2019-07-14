@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Lugar
-from .models import Loja
-from .models import Restaurante
-from .models import Servico
-from .models import Cadastro
-from .models import Contato
+from app.models import Lugar
+from app.models import Loja
+from app.models import Restaurante
+from app.models import Servico
+from app.models import Cadastro
+from app.models import Contato
 
 admin.site.register(Lugar)
 admin.site.register(Loja)

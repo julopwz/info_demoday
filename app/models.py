@@ -91,10 +91,13 @@ class Contato(models.Model):
 
 
 class Cadastro(models.Model):
-    usuario = models.CharField(max_length=20)
-    senha = models.CharField(max_length=10)
-    cpf = models.CharField(max_length=11)
-    email = models.EmailField(max_length=75)
-    celular = models.CharField(max_length=10)
+    nome = models.CharField(max_length=50, default="")
+    telefone = models.CharField(max_length=15, default="")
+    email = models.EmailField(max_length=50, default="")
+    username = models.CharField(max_length=20, default="")
+    password = models.CharField(max_length=20, default="")
+
+    def __str__(self):
+        return  self.username
 
     

@@ -5,13 +5,16 @@
 {% block content %}
 <aside>
     <article id="filtro">
-        <h2>Entrar</h2>
-        <!-- <p>Use of formulário abaixo:</p> -->
-        <form action="." method="post">
+        <h1>Login</h1>
+        <form action="/login/" method="POST">
+            {% csrf_token %} 
             {{ form.as_p }}
-            {% csrf_token %}
-            <button input type="submit" value="Log-in">Entrar</button>
+            <input type="submit" value="Entrar" />
         </form>
+        {% if msg != ' ' %}
+            <p>{{ msg }}</p>
+        {% endif %}
+        <a href="/">Voltar</a>
     </article>
 </aside>
 {%  endblock %}

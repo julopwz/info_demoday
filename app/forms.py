@@ -57,6 +57,8 @@ class CadastroForm(forms.ModelForm):
         #     transaction.rollback()
         #     return False, "Erro ao salvar cliente."
 
+
 class LoginForm(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField(widget=forms.PasswordInput)
+    username = forms.CharField(label='Nome de usuário')
+    password = forms.CharField(label= 'Senha', widget=forms.PasswordInput())
+
