@@ -28,5 +28,5 @@ urlpatterns = [
     path('cadastro/', views.mostrar_cadastro),
     path('pagina4/', views.mostrar_pagina4),
     path('login/', views.mostrar_login, name='login'),
-    path('logout/', views.logout, name='logout'),
+    path('logout/', views.mostrar_logout, name='logout'),
 ]

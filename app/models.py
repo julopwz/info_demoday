@@ -75,8 +75,8 @@ class Contato(models.Model):
 
 class Cadastro(models.Model):
     nome = models.CharField(max_length=50, default='')
-    nascimento = models.DateField(default='')
     telefone = models.CharField(max_length=15, default='')
+    nascimento = models.DateField()
     email = models.EmailField(max_length=50, default='')
     username = models.CharField(max_length=20, default='')
     password = models.CharField(max_length=20, default='')

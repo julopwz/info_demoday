@@ -1,11 +1,7 @@
-from django.shortcuts import render
-from app.forms import ContatoForm, CadastroForm
-from django.http import HttpResponse
-from django.contrib import messages
-from django.contrib.auth import authenticate, login, logout
-from .forms import LoginForm
-from django.contrib.auth.decorators import login_required
 
+from django.shortcuts import render, redirect
+from app.forms import CadastroForm, LoginForm, ContatoForm
+from app.models import Cadastro
 
 def mostrar_index(request):
     return render(request, 'index.html')
@@ -43,6 +39,12 @@ def mostrar_pagina2(request):
 def mostrar_pagina3(request):
     return render(request, 'pagina3.html')
 
+def mostrar_logout(request):
+    return render(request, 'logout.html')
+
+def mostrar_busca(request):
+    return render(request, 'busca.html')
+
 def mostrar_cadastro(request):
     formulario_cadastro = CadastroForm(request.POST or None)
     msg = ' '
@@ -58,22 +60,18 @@ def mostrar_cadastro(request):
     }
 
     return render(request, 'cadastro.html', contexto)
-    
+
+
 def mostrar_login(request): 
     formulario_login = LoginForm(request.POST or None)
-    msg = ''
-
+    msg = ' '
     if formulario_login.is_valid():
         username = formulario_login.cleaned_data['username']
         password = formulario_login.cleaned_data['password']
         user = Cadastro.objects.filter(username=username).first()
-        
         if not user or user.password != password:
             msg = ''
         else:
             return redirect('/busca')
 
     return render(request, 'login.html', {'form': formulario_login, 'msg': msg})
-
-def logout(request):
-    return redirect('login/')
