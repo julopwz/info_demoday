@@ -1,259 +1,251 @@
 
 header{
-    grid-area: header;
     background-color: rgba(242, 242, 242, 1);
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
     border-top: 10px solid rgba(242, 188, 29, 1); ;
     border-block-end: 10px solid rgba(242, 188, 29, 1); ;
+    display: flex;
+    grid-area: header;
+    justify-content: center;
+    margin-top: 0;
 }
 
 .t-h1{
+    align-items: flex-start;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     margin-top: -480px;
 }
 
 .q-serv{
-    /* background-color:red; */
-    display: flex;
-    justify-content: space-around;
     align-items: center;    
+    display: flex;
     height: 100%;
-    width: 100%;
+    justify-content: space-around;
     margin: 0;
+    width: 100%;
 }
 
 .icon-loja{
-    width: 300px;
-    height: 450px;
+    align-items: center;
     background-image: url( '/static/images/lojanova.png' );
     background-size: cover;
-    cursor: pointer;
     background-position-x: 88%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 7%;
+    cursor: pointer;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    width: 300px;
 }
 
 .icon-loja:hover{
-    width: 300px;
-    height: 450px;
-    cursor: pointer;
-    /* background-image: url( '/static/images/fachadat.png' ); */
+    align-items: center;
     background-size: cover;
     background-position-x: 88%;
-    display: flex;
-    transition: all 0.5s;
-    align-items: center;
-    justify-content: center;
     border-radius: 7%;
-    z-index: 1;
-}
-#icons-header{
-    /* background-image: url('/static/images/shop.png'); */
-    width: 300px;
+    cursor: pointer;
+    display: flex;
     height: 450px;
+    justify-content: center;
+    transition: all 0.5s;
+    width: 300px;
+    z-index: 1;
+    /* background-image: url( '/static/images/fachadat.png' ); */
+}
+
+#icons-header{
+    align-items: center;
     background-size: 100px;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: red; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* LOJA ------------------------------------------------- */
-.img-loja{
-    width: 300px;
     height: 450px;
+    justify-content: center;
+    width: 300px;
+    /* background-image: url('/static/images/shop.png'); */
+}
+
+.img-loja{
+    align-items: center;
     background-position-x: 50%;
     background-position-y: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7%;
     background-size: 100px 200px 100px 100px;
     background-repeat: no-repeat;
-
+    border-radius: 7%;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    width: 300px;
 }
+
 .img-loja:hover{
     background-image: url( '/static/images/shop.png' );
     cursor: pointer;
-    transition: all 0.5s;
     display: flex;
+    height: 450px;
     justify-content: center;
+    transition: all 0.5s;
     width: 300px;
-    height: 450px;
-
 }
-/* LOJA ------------------------------------------ */
-/* MOTO ------------------------------------- */
+
 .icon-moto{
-    width: 300px;
-    height: 450px;
+    align-items: center;
     background-image: url( '/static/images/delivery.jpg' );
     background-size: cover;
     background-position-x: 43%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 7%;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    width: 300px;
 }
 
 .icon-moto:hover{
-    cursor: pointer;  
-    width: 300px;
-    height: 450px;
-    /* background-image: url( '/static/images/motot.png' ); */
+    align-items: center; 
     background-size: cover;
     background-position-x: 43%;
+    border-radius: 7%; 
+    cursor: pointer;  
     display: flex;
-    align-items: center;  
-    justify-content: center;
-    border-radius: 7%;
-}
-.img-moto{
-    width: 300px;
     height: 450px;
+    justify-content: center;
+    width: 300px;
+}
+
+.img-moto{
+    align-items: center;
     background-position-x: 50%;
     background-position-y: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7%;
     background-size: 100px 200px 100px 100px;
     background-repeat: no-repeat;
-
+    border-radius: 7%;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    width: 300px;
 }
+
 .img-moto:hover{
     background-image: url( '/static/images/scooter.png' );
     cursor: pointer;
-    transition: all 0.5s;
     display: flex;
+    height: 450px;
     justify-content: center;
+    transition: all 0.5s;
     width: 300px;
-    height: 450px;
-
 }
-/* MOTO -------------------------------- */
-/* SUSTENTABILIDADE --------------------> */
+
 .icon-sust{
-    width: 300px;
-    height: 450px;
+    align-items: center;
     background-image: url( '/static/images/mais.png' );
     background-size: cover;
     background-position-x: 43%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 7%;
-}
-.img-sust{
-    width: 300px;
+    display: flex;
     height: 450px;
+    justify-content: center;
+    width: 300px;
+}
+
+.img-sust{
+    align-items: center;
     background-position-x: 50%;
     background-position-y: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7%;
     background-size: 100px 200px 100px 100px;
     background-repeat: no-repeat;
-
+    border-radius: 7%;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    width: 300px;
 }
+
 .img-sust:hover{
     background-image: url( '/static/images/laptop.png' );
     cursor: pointer;
-    transition: all 0.5s;
     display: flex;
+    height: 450px;
     justify-content: center;
+    transition: all 0.5s;
     width: 300px;
-    height: 450px;
-
 }
-/* TABELA SUSTENTABILIDADE */
-/* RESTURANTE --------------------------- */
+
 .icon-rest{
-    width: 300px;
-    height: 450px;
+    align-items: center;
     background-image: url( '/static/images/restaurantenovo.png' );
     background-color: white;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 7%;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    width: 300px;
 }
 
 .icon-rest:hover{
-    width: 300px;
-    height: 450px;
-    /* background-image: url( '/static/images/restaurantet.png' ); */
+    align-items: center;
     background-color: white;
     background-size: cover;
+    border-radius: 7%;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7%;
-}
-.img-rest{
-    width: 300px;
     height: 450px;
+    justify-content: center;
+    width: 300px;
+}
+
+.img-rest{
+    align-items: center;
     background-position-x: 50%;
     background-position-y: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 7%;
     background-size: 100px 200px 100px 100px;
     background-repeat: no-repeat;
-
+    border-radius: 7%;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    width: 300px;
 }
+
 .img-rest:hover{
     background-image: url( '/static/images/dish.png' );
     cursor: pointer;
-    transition: 1.0s;
     display: flex;
-    justify-content: center;
-    width: 300px;
     height: 450px;
+    justify-content: center;
+    transition: 1.0s;
+    width: 300px;
 }
-/* RESTAURANTE ------------------------------------------- */
   
 header h2{
+    color: #fff; 
     font-size: 2rem;
     letter-spacing: .2em;
     text-transform: uppercase;
-    color: #fff; 
 }
   
 header .w-border h2{
-    /* position: relative; */
-    padding-bottom: 20px;
     display: inline-block;
+    padding-bottom: 20px;
 }
 
 header h2::after{
-    content: "";
-    width: 70px;
-    left: 50%;
-    bottom: 0;
-    height: 5px;
     background: #7cbd1e;
+    bottom: 0;
+    content: "";
     display: flex;
+    height: 5px;
     justify-content: center;
+    left: 50%;
     margin-left: 35%;
     margin-top: 2px;
+    width: 70px;
 }
   
 header .w-border .text-center h2:after{
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%); 
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 }
   
