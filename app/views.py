@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from app.forms import CadastroForm, LoginForm, BuscaForm, ContatoForm
-from app.models import Cadastro, buscar_sigla_especialidade
+from app.models import Cadastro
 # Create your views here.
 
 def mostrar_sobrenos(request):
