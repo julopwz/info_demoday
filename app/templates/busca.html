@@ -1,25 +1,117 @@
-{% extends 'layout.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-{% block content %}
-    <h1>PESQUISE A ESPECIALIDADE</h1>
-    <p>Por exemplo: "Ginecologia"</p>
-    <form action="" method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Pesquisar"/>
-    
-    </form>
-    
-    <div>
-        {% for med in medicos %}      
-            <p>NOME: {{med.nome_Medico}}</p>
-            <p>CRM: {{med.CRM}}</p>
-            <p>ESPECIALIDADE: {{med.especialidade}}</p>
-            <p>ENDEREÇO: {{med.endereco}}</p>
-            <p>CEP: {{med.CEP}}</p>
-            <p>REGIÃO: {{med.regiao_med}}</p>
-            <p>TELEFONE: {{med.telefone}}</p>
-            <p>EMAIL: {{med.email}}</p>    
-        {% endfor %}
-    </div>
-{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/client.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/slide.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <script defer type="text/javascript" src="/static/assets/javascript/h1client.js"></script>
+    <script defer type="text/javascript" src="/static/assets/javascript/navbar.js"></script>
+    <script src="{% static 'app.js' %}"></script>
+    <script src="{% static 'H1.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Infoveg-Cliente</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <!-- MENU NAVBAR -->
+
+    <nav class="navbar transition ">
+        <div class="menu">
+            <ul>
+                <li>
+                    <div id="tamanho-logo">
+                        <p class="logo-nav">InfoVeg</p>
+                        <img class="logo" src="/static/images/icon.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div id="tamanho">
+                        <a href=""></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="tamanho">
+                        <a href="como-funciona/">Lojas</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="tamanho">
+                        <a href="contato/"></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="tamanho">
+                        <a href="sobre-nos/">Restaurantes</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="tamanho">
+                        <a href="cadastro/"></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="tamanho">
+                        <a href="login/">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-auxiliar"></div>
+    </nav>
+    <!-- FIM DO MENU NAVBAR -->
+    <!-- SLIDE -->
+    <section class="slide">
+        <div id="filtro">
+            <h1 id="frases"></h1>
+
+        </div>
+    </section>
+    <!-- INICIO DO FOOTER -->
+    <footer>
+        <div id="footerlinks">
+            <h2>InfoVeg</h2>
+            <div id="linksf">
+                <a href="/notFound">Termos e Privacidade</a>
+                <a href="/contato">Seja Parceiro</a>
+                <a href="/contato">Contato</a>
+                <p id="copyright">©2019 InfoVeg BRASIL INTERMEDIAÇÃO DE NEGÓCIOS LTDA</p>
+            </div>
+            <div id="redesSociais">
+                <div id="icons">
+                    <div class="image">
+                        <a href="">
+                            <img src="/static/images/facebookb.png" alt="">
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="">
+                            <img src="/static/images/linkedinb.png" alt="">
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="">
+                            <img src="/static/images/twitterb.png" alt="">
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="">
+                            <img src="/static/images/instagramb.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <p>Redes Sociais</p>
+                <p>Baixe o aplicativo</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FIM DO FOOTER -->
+</body>
+
+</html>
