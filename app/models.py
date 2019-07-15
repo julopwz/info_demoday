@@ -21,18 +21,18 @@ class Lugar(models.Model):
 class loja(models.Model):
 
     produtos_opcoes =[
-       ('Mc', 'Mercado'),
-       ('Lr','Livros'),
-       ('Rp','Roupas'),
-       ('Ev','Eco-vegan'),
-       ('Ol','On-line'),
-       ('Cm','Cosmeticos'),
+       ('Mercado', 'Mercado'),
+       ('Livros','Livros'),
+       ('Roupas','Roupas'),
+       ('Eco-vegan','Eco-vegan'),
+       ('On-line','On-line'),
+       ('Cosmeticos','Cosmeticos'),
     ]
 
     nome = models.CharField(max_length=30)
     descricao = models.TextField(default='')
     lugar = models.CharField(max_length=50)
-    produtos = models.CharField(max_length=2, choices=produtos_opcoes)
+    produtos = models.CharField(max_length=20, choices=produtos_opcoes)
     foto = models.ImageField(upload_to='media')
 
     def __str__(self):

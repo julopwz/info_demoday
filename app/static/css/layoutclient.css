@@ -185,3 +185,6 @@ footer {
     height: 100%;
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0,0,0, .5),rgba(68, 20, 68, 0.616), rgba(67, 19, 67, 0.397));
 }
+div a{
+    text-decoration: none;
+}
