@@ -1,0 +1,22 @@
+{% extends 'layoutadm.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<aside>
+    <article>
+        <div id="servico">
+            {% for loja in lojas %}
+            <div class="card">
+               <div>
+                   <img id="img-servico" src="/{{loja.foto.url}}" alt="">
+               </div>
+                   <h2 id="nome-servico">{{loja.nome}}</h2>
+                   <p id="rest-texto">Descrição: {{loja.descricao}}</p>
+                   <p>Lugar: {{loja.lugar}}</p>
+                   <p>Produto: {{loja.produtos}}</p>
+                </div>
+       {% endfor %}
+        </div>
+    </article>
+</aside>
+{% endblock %}
