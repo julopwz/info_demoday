@@ -7,7 +7,7 @@ footer{
     font-family: 'Lato', sans-serif;
     flex-direction: column;
     grid-area: footer;
-    height: 20vh;
+    height: 22vh;
     justify-content: space-around;
 }
 
@@ -83,9 +83,4 @@ footer p{
     color: white;
 }
 
-.social p{
-    font-size: 12pt;
-    margin: 0;
-    background-color: aqua;
-}
 
