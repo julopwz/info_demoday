@@ -1,0 +1,28 @@
+section{
+    background-color:rgba(242, 242, 242, 1);
+    grid-area: section;
+    height: 100%;
+    width: 100%;
+}
+  
+.sobre{
+    align-items: center;
+    height: 90%;
+    margin-left: 50px;
+    text-align: justify; 
+    width: 80%;
+}
+
+div p{
+    font-size: 15px;
+}
+
+#olhe {
+    height: 300px;
+    width: 500px;
+}
+
+img{
+    width: 100%;
+}
+
