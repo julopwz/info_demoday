@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from app.forms import CadastroForm, LoginForm, BuscaForm, ContatoForm
-from app.models import Cadastro
-# Create your views here.
+from app.models import Cadastro, Lugar, Loja, Restaurante, Servico, Contato
 
 def mostrar_sobrenos(request):
     return render(request,'sobre-nos.html')
@@ -14,6 +13,18 @@ def mostrar_index(request):
 
 def mostrar_layout(request):
     return render(request,'layout.html')
+
+def mostrar_comofunciona(request):
+    return render(request, 'como-funciona.html')
+
+def mostrar_loja(request):
+    return render(request, 'loja.html')
+
+def mostrar_restaurante(request):
+    return render(request, 'restaurante.html')
+
+def mostrar_servico(request):
+    return render(request, 'servico.html')
 
 def mostrar_contato(request):
     formulario = ContatoForm(request.POST or None)
@@ -57,8 +68,6 @@ def mostrar_cadastro(request):
     }
 
     return render(request, 'cadastro.html', contexto)
-
-
 
 def mostrar_login(request): 
     formulario_login = LoginForm(request.POST or None)

@@ -1,10 +1,6 @@
 from django.db import models
 from django.conf import settings
 
-# Create your models here.
-
-
-
 class Cadastro(models.Model):
     nome = models.CharField(max_length=50, default="")
     nascimento = models.DateField(null=False)

@@ -1,6 +1,7 @@
+
 from django.contrib import admin
-from app.models import Cadastro, Contato, Lugar, Restaurante, Loja, Servico
-# Register your models here.
+from app.models import Cadastro, Lugar, Loja, Restaurante, Servico, Contato
+
 
 admin.site.register(Cadastro)
 admin.site.register(Lugar)
