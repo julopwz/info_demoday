@@ -1,1 +1,1 @@
-web:  gunicorn infoveg.wsgi
+web: gunicorn infoveg.wsgi

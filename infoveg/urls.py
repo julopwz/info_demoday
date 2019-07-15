@@ -32,5 +32,5 @@ urlpatterns = [
     path('loja/', views.mostrar_loja),
     path('restaurante/', views.mostrar_restaurante),
     path('servico/', views.mostrar_servico),
-    path('empresa/', views.mostrar_empresa),
-    ] 
+    path('empresa/', views.mostrar_empresa)
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
