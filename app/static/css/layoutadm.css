@@ -6,7 +6,7 @@ body{
     'slide slide slide slide'
     /* 'aside aside aside aside' */
     'footer footer footer footer';
-    grid-template-rows: 100px 249vh 10vh;
+    grid-template-rows: 100vh 272vh 10vh;
     grid-template-columns: 25% 25% 25% 25%;
 }
 
