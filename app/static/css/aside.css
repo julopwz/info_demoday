@@ -1,124 +1,138 @@
 aside{
-    grid-area: aside;
-    display: flex;
+    align-items: center;
+    background-color: rgba(242, 242, 242, 1);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    justify-content: center; 
     margin:0;
     padding: 0;
     width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(242, 242, 242, 1);
 }
-
 
 aside div p{
+    font-size: 25px;
+    margin: 10px;
     text-align: center;
-    font-size: 30px;
-    margin:0;
+    font-family: 'Lato', sans-serif;
 }
 
-#cadastre{
-    display: flex;
-    justify-content: center;
+.cadastre{
     align-items: center;
+    display: flex;
     flex-direction: column;
-    margin: 20px;
+    justify-content: center;
+    width: 500px;
+    height: 200px;
 }
+
 .cadastro{
-    padding: 0.8em 0em;
-    width: 300px;
-    background: rgba(242, 135, 4, 1);
+    background: black;
     border-radius: 7px;
     border: 0;
     color: #fff;
-    font-size: 16pt;
     cursor: pointer;
+    font-size: 16pt;
     margin: 1em 1em;
+    padding: 0.8em 0em;
     text-transform: uppercase;
+    width: 300px;
+}
+
+#cada{
+    background-color: green;
+}
+
+.quadra{
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
 }
 
 .quadrado{
-    display: flex;
-    height: 100px;
-    width: 100%;
-    position: relative;
     background-position: center;
     background-size: contain;
+    display: flex;
+    height: 100px;
     justify-content: center;
-    vertical-align: baseline;
     padding: 15px;
+    vertical-align: baseline;
+    width: 100%;
 }
 
-
 #foto1 {
-    width: 153px;
-    height: 103px;
     background-image: url('/static/images/avoca.png');
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    height: 103px;
     margin: 4px;
+    width: 153px;
 }
 
 #foto2{
-    width: 153px;
-    height: 103px;
     background-image: url('/static/images/avoca2.png');
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    height: 103px;
     margin: 4px;
+    width: 153px;
 }
 
 #foto3{
-    width: 153px;
-    height: 103px;
     background-image: url('/static/images/cesta.png');
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    height: 103px;
     margin: 4px;
+    width: 153px;
 }
 
 #foto4{
-    width: 153px;
-    height: 103px;
     background-image: url('/static/images/terra.png');
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    height: 103px;
     margin: 4px;
+    width: 153px;
 }
 
 #foto5{
-    width: 153px;
-    height: 103px;
     background-image: url('/static/images/trab.png');
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    height: 103px;
     margin: 4px;
+    width: 153px;
 }
 
 #foto6{
-    width: 153px;
-    height: 103px;
     background-image: url('/static/images/mercado.png');
     background-size: cover;
     background-position: center;
     border-radius: 7px;
+    height: 103px;
     margin: 4px;
+    width: 153px;
 }
 
 #foto7{
-    width: 153px;
-    height: 103px;
     background-image: url('/static/images/trab2.png');
     background-size: cover;
     background-position: center;
-    border-radius: 7px;
+    border-radius: 7px; 
+    height: 103px;
     margin: 4px;
+    width: 153px;
 }
 
 
