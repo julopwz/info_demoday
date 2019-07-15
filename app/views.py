@@ -1,6 +1,10 @@
 from django.shortcuts import render, redirect
-from app.forms import CadastroForm, LoginForm, BuscaForm, ContatoForm
-from app.models import Cadastro, Lugar, loja, restaurante, Servico, Contato
+from app.forms import CadastroForm, LoginForm, BuscaForm, ContatoForm, EmpresaForm
+from app.models import Cadastro, Lugar, loja, restaurante, Servico, Contato, empresa
+
+def mostrar_empresa(request):
+    empresa = EmpresaForm()
+    return render(request, "empresa.html", {'empresa':empresa})
 
 def mostrar_sobrenos(request):
     return render(request,'sobre-nos.html')
