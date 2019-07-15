@@ -1,6 +1,20 @@
-{% extends 'layoutclient.html' %}
+{% extends 'layoutadm.html' %}
 {% load staticfiles %}
 
 {% block content %}
-<h1>TESTEEEEEEEEEEEE</h1>
+<aside>
+    <article>
+        {% for loja in lojas %}
+        <div class="card">
+           <div>
+               <img src="/{{loja.foto.url}}" alt="">
+           </div>
+               <h2>{{loja.nome}}</h2>
+               <p>Descrição: {{loja.descricao}}</p>
+               <p>Lugar: {{loja.lugar}}</p>
+               <p>Produto: {{loja.produtos}}</p>
+           </div>
+   {% endfor %}
+    </article>
+</aside>
 {% endblock %}

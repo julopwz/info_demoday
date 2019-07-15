@@ -1,12 +1,13 @@
 from django.shortcuts import render, redirect
 from app.forms import CadastroForm, LoginForm, BuscaForm, ContatoForm
-from app.models import Cadastro, Lugar, Loja, Restaurante, Servico, Contato
+from app.models import Cadastro, Lugar, loja, Restaurante, Servico, Contato
 
 def mostrar_sobrenos(request):
     return render(request,'sobre-nos.html')
 
 def mostrar_loja(request):
-    return render(request, 'loja.html')
+    lojas = loja.objects.all()
+    return render(request, 'loja.html', {'lojas':lojas})
 
 def mostrar_index(request):
     return render(request, 'index.html')
@@ -17,8 +18,6 @@ def mostrar_layout(request):
 def mostrar_comofunciona(request):
     return render(request, 'como-funciona.html')
 
-def mostrar_loja(request):
-    return render(request, 'loja.html')
 
 def mostrar_restaurante(request):
     return render(request, 'restaurante.html')

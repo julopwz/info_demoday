@@ -18,7 +18,7 @@ class Lugar(models.Model):
     titulo = models.CharField(max_length=200)
     texto = models.TextField(default='')
       
-class Loja(models.Model):
+class loja(models.Model):
 
     produtos_opcoes =[
        ('Mc', 'Mercado'),
@@ -33,7 +33,7 @@ class Loja(models.Model):
     descricao = models.TextField(default='')
     lugar = models.CharField(max_length=50)
     produtos = models.CharField(max_length=2, choices=produtos_opcoes)
-    foto = models.ImageField(upload_to='', default='')
+    foto = models.ImageField(upload_to='media')
 
     def __str__(self):
        return self.nome

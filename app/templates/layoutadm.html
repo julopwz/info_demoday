@@ -1,0 +1,112 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/layoutadm.css' %}">
+    <script defer type="text/javascript" src="/static/assets/javascript/navbar.js"></script>
+    <script defer type="text/javascript" src="/static/assets/javascript/sobrenos.js"></script>
+    <script defer type="text/javascript" src="/static/assets/javascript/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>InfoVeg</title>
+</head>
+<body>
+    <!-- MENU NAVBAR -->
+<nav class="navbar transition ">
+        <div class="menu">
+        <ul>
+            <li>
+                <div id="tamanho-logo">
+                <p class="logo-nav">InfoVeg</p>
+                </div>
+            </li>
+            <li>
+                <div id="tamanho-inicio">
+                <a href="/">Início</a>
+                </div>
+            </li>
+            <li>
+                <!-- <div id="tamanho">
+                <a href=""> Inscrever-se</a>
+                </div> -->
+            </li>
+            <li>
+                <div id="tamanho">
+                <a href="">Contato</a>
+                </div>
+            </li>
+            <li>
+                <div id="tamanho">
+                <a href="">Sobre nós</a>
+                </div>
+            </li>
+            <li>
+                <div id="tamanho">
+                <a href="">Como funciona</a>
+                </div>
+            </li>
+            <li>
+                <div id="tamanho">
+                <a href="">Entrar</a>
+                </div>
+            </li>
+        </ul>
+        </div>  
+        <div class="navbar-auxiliar"></div>
+</nav>
+<!-- FIM DO MENU NAVBAR -->
+{% block content %}
+
+{% endblock %}
+
+<!-- INICIO DO FOOTER -->
+
+<footer>
+        <div id="footerlinks">
+            <h3>InfoVeg</h3>
+            <div id="linksf">
+                <a href="/notFound">Termos e Privacidade</a>
+                <a href="/contato">Contato</a>
+                <p id="copyright">© 2019 InfoVeg Ltda</p>
+            </div>
+            <div id="redesSociais">
+                <div id="icons">
+                    <div class="image">
+                        <a href="">
+                            <img src="/static/images/facebookb.png" alt="">
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="">
+                            <img src="/static/images/linkedinb.png" alt="">
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="">
+                            <img src="/static/images/twitterb.png" alt="">
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="">
+                            <img src="/static/images/instagramb.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <p>Redes Sociais</p>
+            </div>
+        </div>
+</footer>
+<!-- FIM DO FOOTER -->
+    
+</body>
+</html>
+
+
+
+
