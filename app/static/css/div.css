@@ -12,11 +12,28 @@
 }
 
 .saiba-mais{
-    background-color: rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+    background-color: rgba(0, 1, 0, 0.705);
     border-radius: 7%;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
     height: 300px;
     margin: 10px;
     position: relative;
     width: 300px;
+}
+
+.mais{
+    color:rgba(242, 242, 242, 1);
+    margin: 10px;
+}
+
+.clik{
+    font-size: 50%;
+}
+
+div div p{
+    font-size: 200%;
 }
 
