@@ -12,21 +12,23 @@ aside{
 }
 
 aside div p{
-    font-size: 30px;
-    margin:0;
+    font-size: 25px;
+    margin: 10px;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
-#cadastre{
+.cadastre{
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px;
+    width: 500px;
+    height: 200px;
 }
 
 .cadastro{
-    background: rgba(242, 135, 4, 1);
+    background: black;
     border-radius: 7px;
     border: 0;
     color: #fff;
@@ -38,6 +40,20 @@ aside div p{
     width: 300px;
 }
 
+#cada{
+    background-color: green;
+}
+
+.quadra{
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+}
+
 .quadrado{
     background-position: center;
     background-size: contain;
@@ -45,11 +61,9 @@ aside div p{
     height: 100px;
     justify-content: center;
     padding: 15px;
-    position: relative;
     vertical-align: baseline;
     width: 100%;
 }
-
 
 #foto1 {
     background-image: url('/static/images/avoca.png');
