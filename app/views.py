@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from app.forms import CadastroForm, LoginForm, BuscaForm, ContatoForm
-from app.models import Cadastro, Lugar, loja, Restaurante, Servico, Contato
+from app.models import Cadastro, Lugar, loja, restaurante, Servico, Contato
 
 def mostrar_sobrenos(request):
     return render(request,'sobre-nos.html')
@@ -20,7 +20,8 @@ def mostrar_comofunciona(request):
 
 
 def mostrar_restaurante(request):
-    return render(request, 'restaurante.html')
+    restaurantes = restaurante.objects.all()
+    return render(request, 'restaurante.html', {'restaurantes':restaurantes})
 
 def mostrar_servico(request):
     return render(request, 'servico.html')

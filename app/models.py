@@ -38,7 +38,7 @@ class loja(models.Model):
     def __str__(self):
        return self.nome
 
-class Restaurante(models.Model):
+class restaurante(models.Model):
 
     tipo_opcoes = [
        ('vegano', 'Vegano'),
