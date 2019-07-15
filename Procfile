@@ -1,1 +1,1 @@
-web:  gunicorn viloes.wsgi
+web:  gunicorn infoveg.wsgi
