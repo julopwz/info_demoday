@@ -53,8 +53,8 @@ class Restaurante(models.Model):
        (5,5),
     ]
 
-    nome = models.CharField(max_length=30)
-    descricao = models.TextField(default='')
+    nome = models.CharField(max_length=90)
+    descricao = models.TextField(max_length=200, default='')
     qualidade = models.PositiveIntegerField()
     categoria = models.CharField(max_length=20, choices=tipo_opcoes)
     nivel_avaliacao = models.PositiveIntegerField(choices=nivel_avaliacao)
