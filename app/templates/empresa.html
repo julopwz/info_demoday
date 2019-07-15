@@ -1,0 +1,20 @@
+{% extends 'layoutclient.html' %}
+
+{% block content %}
+<aside>
+    <article id="filtro">
+        <div id="empresas-div1">
+            <h2 id="logo-empresas">Empresas</h2>
+            <p id="text-empresas">Cadastre sua loja ou restaurante com a gente!</p>
+            <p id="text-empresas">Tenha clientes de qualidade!</p>
+
+        </div>
+            <div id="empresa-div">
+                <form method="POST" class="post-form">
+                        {% csrf_token %}{{ empresa.as_p }}
+                    <button type="submit" class="save btn btn-default">Enviar</button>
+                </form>
+            </div>
+        </article>
+    </aside>
+{% endblock %}

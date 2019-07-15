@@ -1,5 +1,5 @@
 from django import forms
-from app.models import Contato, Cadastro
+from app.models import Contato, Cadastro, empresa
 from django.conf.global_settings import DATETIME_INPUT_FORMATS
 
 class CadastroForm(forms.ModelForm):
@@ -31,4 +31,14 @@ class ContatoForm(forms.ModelForm):
            'telefone',
            'assunto',
            'mensagem',
+        ]
+
+class EmpresaForm(forms.ModelForm):
+    class Meta:
+        model = empresa
+        fields = [
+            'endereco',
+            'foto',
+            'empresa',
+            'email',
         ]

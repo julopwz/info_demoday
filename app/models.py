@@ -21,24 +21,24 @@ class Lugar(models.Model):
 class loja(models.Model):
 
     produtos_opcoes =[
-       ('Mc', 'Mercado'),
-       ('Lr','Livros'),
-       ('Rp','Roupas'),
-       ('Ev','Eco-vegan'),
-       ('Ol','On-line'),
-       ('Cm','Cosmeticos'),
+       ('Mercado', 'Mercado'),
+       ('Livros','Livros'),
+       ('Roupas','Roupas'),
+       ('Eco-vegan','Eco-vegan'),
+       ('On-line','On-line'),
+       ('Cosmeticos','Cosmeticos'),
     ]
 
     nome = models.CharField(max_length=30)
     descricao = models.TextField(default='')
     lugar = models.CharField(max_length=50)
-    produtos = models.CharField(max_length=2, choices=produtos_opcoes)
+    produtos = models.CharField(max_length=20, choices=produtos_opcoes)
     foto = models.ImageField(upload_to='media')
 
     def __str__(self):
        return self.nome
 
-class Restaurante(models.Model):
+class restaurante(models.Model):
 
     tipo_opcoes = [
        ('vegano', 'Vegano'),
@@ -53,8 +53,8 @@ class Restaurante(models.Model):
        (5,5),
     ]
 
-    nome = models.CharField(max_length=30)
-    descricao = models.TextField(default='')
+    nome = models.CharField(max_length=90)
+    descricao = models.TextField(max_length=200, default='')
     qualidade = models.PositiveIntegerField()
     categoria = models.CharField(max_length=20, choices=tipo_opcoes)
     nivel_avaliacao = models.PositiveIntegerField(choices=nivel_avaliacao)
@@ -69,10 +69,10 @@ class Servico(models.Model):
        ('auxilio', 'Auxilio'),
     ]
 
-    nome = models.CharField(max_length=30)
-    descricao = models.TextField( max_length=50)
+    nome = models.CharField(max_length=100)
+    descricao = models.TextField( max_length=300)
     foto = models.ImageField(upload_to='', default='')
-    servico = models.CharField(max_length=2, choices=servico_opcoes, default='')
+    servico = models.CharField(max_length=20, choices=servico_opcoes, default='')
 
 class Contato(models.Model):
     nome = models.CharField(max_length=50, default='')
@@ -83,3 +83,15 @@ class Contato(models.Model):
 
     def __str__(self):
         return self.assunto
+
+class empresa(models.Model):
+
+    endereco = models.CharField(max_length=60, default='')
+    foto = models.ImageField(upload_to='', default='')
+    empresa = models.CharField(max_length=50, default='')
+    email = models.EmailField(null=False)
+
+    def __str__(self):
+        return self.empresa
+
+    

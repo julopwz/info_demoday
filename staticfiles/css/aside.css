@@ -1,0 +1,134 @@
+aside{
+    align-items: center;
+    background-color: rgba(242, 242, 242, 1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    justify-content: center; 
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+aside div p{
+    font-size: 25px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.cadastre{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 200px;
+}
+
+.cadastro{
+    background: black;
+    border-radius: 7px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16pt;
+    margin: 1em 1em;
+    padding: 0.8em 0em;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+.quadra{
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+}
+
+.quadrado{
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    padding: 15px;
+    vertical-align: baseline;
+    width: 100%;
+}
+
+#foto1 {
+    background-image: url('/static/images/avoca.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    height: 103px;
+    margin: 4px;
+    width: 153px;
+}
+
+#foto2{
+    background-image: url('/static/images/avoca2.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    height: 103px;
+    margin: 4px;
+    width: 153px;
+}
+
+#foto3{
+    background-image: url('/static/images/cesta.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    height: 103px;
+    margin: 4px;
+    width: 153px;
+}
+
+#foto4{
+    background-image: url('/static/images/terra.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    height: 103px;
+    margin: 4px;
+    width: 153px;
+}
+
+#foto5{
+    background-image: url('/static/images/trab.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    height: 103px;
+    margin: 4px;
+    width: 153px;
+}
+
+#foto6{
+    background-image: url('/static/images/mercado.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    height: 103px;
+    margin: 4px;
+    width: 153px;
+}
+
+#foto7{
+    background-image: url('/static/images/trab2.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px; 
+    height: 103px;
+    margin: 4px;
+    width: 153px;
+}
+
+

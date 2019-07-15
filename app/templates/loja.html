@@ -4,17 +4,22 @@
 {% block content %}
 <aside>
     <article>
-        {% for loja in lojas %}
-        <div class="card">
-           <div>
-               <img src="/{{loja.foto.url}}" alt="">
-           </div>
-               <h2>{{loja.nome}}</h2>
-               <p>Descrição: {{loja.descricao}}</p>
-               <p>Lugar: {{loja.lugar}}</p>
-               <p>Produto: {{loja.produtos}}</p>
-           </div>
-   {% endfor %}
+        <div id="lojas">
+            {% for loja in lojas %}
+            <div class="card">
+               <div>
+                   <img id="img-loja" src="/{{loja.foto.url}}" alt="">
+               </div>
+                   <h2 id="nome-loja">{{loja.nome}}</h2>
+                   <p id="rest-texto">Descrição: {{loja.descricao}}</p>
+                   <p>Lugar: {{loja.lugar}}</p>
+                   <p>Produto: {{loja.produtos}}</p>
+                   <a id="none-t" href="/" style="text-decoration: none">
+                       <button id="voltar" type="submit" aria-label="entrar" href="/">Maps</button>
+                   </a>
+                </div>
+       {% endfor %}
+        </div>
     </article>
 </aside>
 {% endblock %}
