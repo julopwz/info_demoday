@@ -35,6 +35,7 @@ footer p{
 
 #copyright{
     font-size: 10px;
+    color: white;
 }
 
 #footerlinks{
@@ -77,5 +78,8 @@ footer p{
     flex-direction: column;
     height: 20vh;
     justify-content: space-around;
+}
+#p-rede{
+    color: white;
 }
 
