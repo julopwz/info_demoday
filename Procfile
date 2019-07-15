@@ -1,1 +1,1 @@
-web: gunicorn projeto.wsgi
+web:  gunicorn viloes.wsgi
