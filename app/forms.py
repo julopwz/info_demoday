@@ -37,12 +37,8 @@ class EmpresaForm(forms.ModelForm):
     class Meta:
         model = empresa
         fields = [
-            'cnpj',
-            'nome_completo',
             'endereco',
-            'telefone',
             'foto',
             'empresa',
             'email',
-            'sexo'
         ]

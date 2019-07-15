@@ -86,20 +86,10 @@ class Contato(models.Model):
 
 class empresa(models.Model):
 
-    SEXO_CHOICES = [
-        ["F", "Feminino"],
-        ["M", "Masculino"],
-        ["N", "Nenhuma das opções"]
-    ]
-
-    cnpj = models.CharField(max_length=50, default='')
-    nome_completo = models.CharField(max_length=50, default='')
     endereco = models.CharField(max_length=60, default='')
-    telefone = models.CharField(max_length=10, default='')
     foto = models.ImageField(upload_to='', default='')
     empresa = models.CharField(max_length=50, default='')
     email = models.EmailField(null=False)
-    sexo = models.CharField(max_length=1, choices=SEXO_CHOICES)
 
     def __str__(self):
         return self.empresa
