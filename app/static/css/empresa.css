@@ -4,6 +4,7 @@ aside {
     background-image: url('/static/images/repolho2.jpg');
     background-size: cover;
 }
+
 h2{
     color: white;
     font-size: 30pt;
@@ -18,10 +19,12 @@ form{
     height: 68%;
     width: 50%;
 }
+
 input:not([type="image" i]){
     box-sizing: border-box;
     width: 200px;
 }
+
 input[type="hidden" i]{
     display: none;
     -webkit-appearance: initial;

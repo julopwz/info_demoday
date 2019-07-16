@@ -1,9 +1,10 @@
 .explica{
     align-items: center;
-    background-color:rgba(242, 242, 242, 1);
-    height: 100vh;
     width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0,0,0, .5),rgba(96, 140, 2, 0.521), rgba(96, 140, 2, 0.534));
 }
+
 #sobrePrincipal{
     display: flex;
     justify-content: space-around;
@@ -22,26 +23,34 @@
 
 #exp{
     width: 500px; 
-    background-image: url(/static/images/sobrenos.png);
-    background-size: cover;
+    background-color: white;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
+}
+
+
+.cadastro{
+    background: black;
+    border-radius: 7px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16pt;
+    margin: 1em 1em;
+    padding: 0.8em 0em;
+    text-transform: uppercase;
+    width: 300px;
 }
 
 p{
     align-items: center;
     margin: 10px;
 }
-.explica{
-    align-items: center;
-    background-color:rgba(242, 242, 242, 1);
-    height: 100vh;
-    width: 100%;
-}
+
 aside div h3{
     font-family: 'Lato', sans-serif;
     font-size: 30px;
-    margin: 20px;
+    margin: 5px;
 }
 
 #tituloo{
@@ -53,7 +62,7 @@ aside div h3{
 }
 
 #saude{
-    background-image: url(/static/images/3.png);
+    background-image: url(/static/images/carrots-carrying-colorful-1389103.jpg);
     background-size: cover;
 }
 
@@ -61,18 +70,4 @@ aside div h3{
     display: flex;
     justify-content: space-around;
     height: 50vh;
-}
-
-.assim{
-    align-items: flex-start;
-    border-radius: 7%;
-    display: flex;
-    font-family: 'Lato', sans-serif;
-    flex-direction: column;
-    height: 500px;
-    width: 600px;
-}
-
-#exp{
-    width: 500px; 
 }
