@@ -190,19 +190,19 @@ footer {
     /* background-color: rgba(255, 255, 255, 0.527); */
     margin-top: 5px;
 }
-.card{
+.servico{
     border: 1px solid lightgrey;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70vh;
-    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-color: rgb(242, 242, 242);
 }
 #nome-serv{
     font-size: 17pt;
     font-family: sans-serif;
-    color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.527);
+    color: black;
+    text-shadow: 2px 2px rgba(23, 175, 43, 0.527);
 }
 #text-h1{
     width: 100%;
@@ -210,7 +210,7 @@ footer {
 div p{
     font-size: 12pt;
     font-family: sans-serif;
-    color: white;
+    color: black;
     padding: 18px;
 }
 #img-serv{

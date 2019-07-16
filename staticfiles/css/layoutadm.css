@@ -194,6 +194,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 35vh;
+    background-color: rgb(242, 242, 242);
 }
 #nome-loja{
     font-size: 17pt;
