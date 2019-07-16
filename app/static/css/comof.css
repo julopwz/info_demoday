@@ -28,6 +28,20 @@
     font-family: 'Lato', sans-serif;
 }
 
+
+.cadastro{
+    background: black;
+    border-radius: 7px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16pt;
+    margin: 1em 1em;
+    padding: 0.8em 0em;
+    text-transform: uppercase;
+    width: 300px;
+}
+
 p{
     align-items: center;
     margin: 10px;
