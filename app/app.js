@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
   //textos a serem exibidos
-  var textos = ["texto 1", "texto 2", "texto 3"];
+  let textos = ["texto 1", "texto 2", "texto 3"];
 
   //exibição inicial
-  var atual = 0;
+  let atual = 0;
   $('#frases').text(textos[atual++]);
 
   //define intervalo de troca
