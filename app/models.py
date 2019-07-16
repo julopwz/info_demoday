@@ -60,7 +60,7 @@ class restaurante(models.Model):
     nivel_avaliacao = models.PositiveIntegerField(choices=nivel_avaliacao)
     foto = models.ImageField(upload_to='', default='')
 
-class Servico(models.Model):
+class servico(models.Model):
 
     servico_opcoes = [
        ('delivery', 'Delivery'),
@@ -72,7 +72,10 @@ class Servico(models.Model):
     nome = models.CharField(max_length=100)
     descricao = models.TextField( max_length=300)
     foto = models.ImageField(upload_to='', default='')
-    servico = models.CharField(max_length=20, choices=servico_opcoes, default='')
+    trabalhos = models.CharField(max_length=20, choices=servico_opcoes, default='')
+
+    def __str__(self):
+        return self.nome
 
 class Contato(models.Model):
     nome = models.CharField(max_length=50, default='')

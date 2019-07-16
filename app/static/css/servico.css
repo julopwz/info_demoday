@@ -184,7 +184,7 @@ footer {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.63),rgba(50, 58, 32, 0.521), rgba(70, 85, 39, 0.534));
 }
 /* LOJAS ===================================================== */
-#lojas{
+#serv{
     height: 100%;
     width: 100%;
     /* background-color: rgba(255, 255, 255, 0.527); */
@@ -195,15 +195,31 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 70vh;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
-#nome-loja{
+#nome-serv{
     font-size: 17pt;
     font-family: sans-serif;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.527);
+}
+#text-h1{
+    width: 100%;
 }
 div p{
     font-size: 12pt;
     font-family: sans-serif;
-    color: black;
+    color: white;
     padding: 18px;
+}
+#img-serv{
+        border: 1px solid black;
+    border-radius: 4px;
+    background-size: 159px;
+    max-width: 342px;
+    max-height: 245px;
+    width: auto;
+    height: auto;
 }
 /* SERVIÇO ========================================= */

@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from app.forms import CadastroForm, LoginForm, BuscaForm, ContatoForm, EmpresaForm
-from app.models import Cadastro, Lugar, loja, restaurante, Servico, Contato, empresa
+from app.models import Cadastro, Lugar, loja, restaurante, servico, Contato, empresa
 
 def mostrar_empresa(request):
     empresa = EmpresaForm()
@@ -28,7 +28,8 @@ def mostrar_restaurante(request):
     return render(request, 'restaurante.html', {'restaurantes':restaurantes})
 
 def mostrar_servico(request):
-    return render(request, 'servico.html')
+    servicos = servico.objects.all()
+    return render(request, 'servico.html', {'servicos':servicos})
 
 def mostrar_contato(request):
     formulario = ContatoForm(request.POST or None)
