@@ -41,18 +41,8 @@ aside div h3{
 
 #exp{
     width: 500px; 
-}
-
-.saiba-mais{
-    height: 100px;
-    width: 100px;
-    flex-direction: row;
-    display: flex;
-}
-
-.imgc{
-    height: 90px;
-    width: 90px;
+    background-image: url(/static/images/sobrenos.png);
+    background-size: cover;
 }
 
 .text{
