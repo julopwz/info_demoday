@@ -4,7 +4,6 @@ body{
     grid-template-areas:
     'header header header header' 
     'slide slide slide slide'
-    /* 'aside aside aside aside' */
     'footer footer footer footer';
     grid-template-rows: 100px 100vh 10vh;
     grid-template-columns: 25% 25% 25% 25%;
@@ -14,8 +13,6 @@ body{
 aside{
     grid-area: slide;
 }
-
-/* NAVBAR --------------------- */
 
 #navbarbranco{
     width: 100%;
@@ -37,15 +34,18 @@ nav{
     flex-direction: column;
     font-family: 'Lato', sans-serif;
 } 
+
 .logo-nav{
     color: white;
     font-size: 25px;
 }
+
 #tamanho-inicio{
     width: 200px;
     display: flex;
     justify-content: center;
 }
+
 .menu{
     width:100%;
     padding:20px;
@@ -84,7 +84,7 @@ nav div ul{
     width: 200px;
 }
 
-/* FIM DA NAVBAR -------------------------------- */
+
 #sobrePrincipal{
     display: flex;
     justify-content: flex-start;
@@ -99,7 +99,6 @@ section{
     grid-area: section;
     border-top: 10px solid rgba(242, 105, 26, 1);
     border-block-end: 10px solid rgba(242, 135, 4, 1);
-    /* height: 100vh; */
     background-image: none;
     font-family: 'Lato', sans-serif;
     padding: 10px;
@@ -112,8 +111,8 @@ section div{
     align-items: center;
     color: white;
     width: 100%;
-    
 }
+
 section div p{
     margin-top: 80px;
     color: black;
@@ -122,6 +121,7 @@ section div p{
     display: flex;
     font-size: 19px;
 }
+
 .titulo{
     font-weight: bold;
     text-align: center;
@@ -129,6 +129,7 @@ section div p{
     text-transform: uppercase;
     color: black;
 }
+
 h4{
     display: block;
     margin-block-start: 1.33em;
@@ -148,6 +149,7 @@ footer {
     margin: 0;
     height: 147px;
 }
+
 #voltar{
     width: 130px;
     height: 35px;
@@ -159,12 +161,14 @@ footer {
     justify-content: center;
     margin-right: 48px;
 }
+
 #button-login{
     width: 153px;
     height: 167px;
     margin-top: 312px;
     margin-left: 1098px;
 }
+
 #none-t{
     padding: 1px;
     text-decoration: none;
