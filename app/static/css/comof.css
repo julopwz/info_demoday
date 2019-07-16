@@ -23,8 +23,7 @@
 
 #exp{
     width: 500px; 
-    background-image: url(/static/images/sobrenos.png);
-    background-size: cover;
+    background-color: white;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
 }
