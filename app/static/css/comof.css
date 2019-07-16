@@ -41,6 +41,8 @@ aside div h3{
 
 #exp{
     width: 500px; 
+    background-image: url(/static/images/sobrenos.png);
+    background-size: cover;
 }
 
 .saiba-mais{
