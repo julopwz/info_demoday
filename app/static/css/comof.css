@@ -45,18 +45,6 @@ aside div h3{
     background-size: cover;
 }
 
-.saiba-mais{
-    height: 100px;
-    width: 100px;
-    flex-direction: row;
-    display: flex;
-}
-
-.imgc{
-    height: 90px;
-    width: 90px;
-}
-
 .text{
     height: 80%;
     width: 50%;
