@@ -9,17 +9,8 @@ body{
                        'section section div div'
                        'aside aside aside aside'
                        'footer footer footer footer';
-grid-template-rows: 100vh 90vh 90vh 90vh 10vh;
-grid-template-columns: 25% 25% 25% 25% 25%;
-/* grid-row-gap: 3px;x' */
-/* grid-column-gap: 5px; */
-grid-row-gap: 0;
-background-color: white;
+  grid-template-rows: 100vh 90vh 90vh 90vh 10vh;
+  grid-template-columns: 25% 25% 25% 25% 25%;
+  grid-row-gap: 0;
+  background-color: white;
 }
-
-/* Color Theme Swatches in RGBA */
-.orange-isolated-on-white-background-1-rgba { color: rgba(49, 114, 2, 1); }
-.orange-isolated-on-white-background-2-rgba { color: rgba(242, 188, 29, 1); }
-.orange-isolated-on-white-background-3-rgba { color: rgba(242, 135, 4, 1); }
-.orange-isolated-on-white-background-4-rgba { color: rgba(242, 105, 26, 1); }
-.orange-isolated-on-white-background-5-rgba { color: rgba(242, 242, 242, 1); }
