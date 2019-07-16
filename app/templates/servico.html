@@ -8,12 +8,11 @@
             {% for servico in servico %}
             <div class="card">
                <div>
-                   <img id="img-servico" src="/{{loja.foto.url}}" alt="">
+                   <img id="img-servico" src="/{{servico.foto.url}}" alt="">
                </div>
-                   <h2 id="nome-servico">{{loja.nome}}</h2>
-                   <p id="rest-texto">Descrição: {{loja.descricao}}</p>
-                   <p>Lugar: {{loja.lugar}}</p>
-                   <p>Produto: {{loja.produtos}}</p>
+                   <h2 id="nome-servico">{{servico.nome}}</h2>
+                   <p id="rest-texto">Descrição: {{servico.descricao}}</p>
+                   <p>Descrição: {{servico.descricao}}</p>
                 </div>
        {% endfor %}
         </div>
