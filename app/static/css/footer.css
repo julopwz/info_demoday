@@ -45,7 +45,7 @@ footer p{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 63%;
+    height: 147px;
 }
 
 #footerlinks > img{
@@ -63,7 +63,7 @@ footer p{
     flex-direction: column;
     height: 50px;
     justify-content: flex-start;
-    margin-top: 4vh;
+    margin-top: 6vh;
     width: 20vw;
 }
 
@@ -81,6 +81,7 @@ footer p{
     flex-direction: column;
     height: 120px;
     justify-content: space-around;
+    margin-top: 24px;
 }
 #p-rede{
     color: white;
@@ -88,6 +89,8 @@ footer p{
 #p-footer{
     font-size: 15pt;
     margin-left: 10px;
+    margin-top: 15px;
+    color: white;
 }
 #h2-footer{
     font-size: 40pt;
