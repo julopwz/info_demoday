@@ -47,6 +47,11 @@ aside div h3{
     font-family: 'Lato', sans-serif;
 }
 
+p{
+    align-items: center;
+    margin: 10px;
+}
+
 .text{
     height: 80%;
     width: 50%;
