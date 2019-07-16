@@ -1,8 +1,8 @@
 
 header{
     background-color: rgba(242, 242, 242, 1);
-    border-top: 10px solid rgba(242, 188, 29, 1); ;
-    border-block-end: 10px solid rgba(242, 188, 29, 1); ;
+    border-top: 10px solid rgb(49, 114, 2); 
+    border-block-end: 10px solid rgb(49, 114, 2); 
     display: flex;
     grid-area: header;
     justify-content: center;

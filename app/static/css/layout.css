@@ -146,7 +146,7 @@ h4{
 footer {
     grid-area: footer;
     margin: 0;
-    height: 120px;
+    height: 147px;
 }
 #voltar{
     width: 130px;
@@ -158,4 +158,15 @@ footer {
     display: flex;
     justify-content: center;
     margin-right: 48px;
+}
+#button-login{
+    width: 153px;
+    height: 167px;
+    margin-top: 312px;
+    margin-left: 1098px;
+}
+#none-t{
+    padding: 1px;
+    text-decoration: none;
+    cursor: pointer;
 }
