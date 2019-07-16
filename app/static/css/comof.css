@@ -7,11 +7,28 @@
 #sobrePrincipal{
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    height: 50vh;
 }
-    
-.funciona{
-    background-color:green;
-    width: 300px;
-    height: 300px;
+
+.assim{
+    align-items: flex-start;
+    border-radius: 7%;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+    height: 500px;
+    width: 600px;
+}
+
+#exp{
+    width: 500px; 
+    background-image: url(/static/images/sobrenos.png);
+    background-size: cover;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+p{
+    align-items: center;
+    margin: 10px;
 }
